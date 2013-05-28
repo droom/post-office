@@ -1,0 +1,473 @@
+body
+	{
+	margin:0;
+	padding: 0;
+	font-size:106%;
+	}
+
+html>body
+	{
+	font-size: 17px; 
+	}
+
+
+/*-----------------------------------------*/
+/*-- HEADERS ------------------------------*/
+/*-----------------------------------------*/
+
+
+h1{
+	font-size: 3.6em;
+	line-height: 0.89em;
+	letter-spacing: -0.05em;
+	margin-left: -0.05em;
+	padding: 2.16em 0 0 0;
+	}
+
+h2 {
+	padding: 0 0 0.7em;
+	padding: 0.15em 0 0.4em;
+	font-size: 1.3em;
+	letter-spacing: 0;
+	margin: 0 -0.04em;
+	line-height: 1.3em;
+	}
+
+h3 {
+	font-size:1.4em;
+	letter-spacing:-0.04em;
+	}
+
+
+/*-----------------------------------------*/
+
+
+
+/*-- POINT SIZE --------------------------*/
+
+.chat b,
+.postContent .about p,
+footer .postContent p,
+footer small,
+.dateContent p, 
+.dateContent time,
+.tagContent li{
+	font-size:0.65em;
+	}
+
+header .tagContent li{
+	font-size:0.85em;
+	}	
+
+.postContent figure figcaption p,
+.postContent figure figcaption div,
+.quote .postContent figure figcaption,
+.text .postContent p,
+.text .postContent li,
+.post .link blockquote p,
+p.link,
+.postLink a,
+.results p
+	{
+	font-size:1em;
+	}
+
+.chat .postContent li
+	{
+	font-size:1.35rem;
+	}
+
+.dateContent{
+	display: block;
+	width: 100%;
+	}
+
+.dateContent p{
+	text-align: left;
+	float: left;
+	padding:0;
+	}
+
+header .dateContent,
+footer .dateContent{
+	display: none;
+	}
+
+header .postContent{
+	}
+
+.tagContent{
+	display:none;
+	}
+
+header .tagContent{
+	display:block;
+	border-bottom: 1px solid rgb(29, 99, 20);
+}
+
+header nav {
+	padding:0;
+	}
+
+.dateContent
+	{
+	padding:0;
+	}
+
+header .postContent
+	{
+	border-left:none;
+	}
+
+.wrap,
+.photo .dateContent{
+	padding: 0;
+	margin: 0;
+	}	
+
+h1{
+	padding:0.42em 0 0 0
+	}
+
+
+.tagContent p{
+	padding-left:0;
+	}
+
+
+
+
+
+.about{
+	width: 100%;
+	font-size: 1em;
+	padding:7px 3px;
+	background-color: rgb(29, 99, 20);
+	display: block;
+
+}
+
+
+.text .postContent blockquote {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.text, .photo, .chat, .link, .audio, .video, .quote {
+margin: 0;
+margin: 0;
+display: block;
+}
+
+.text .postContent ul, .text .postContent ol {
+padding: 0.1em 0 0;
+}
+
+.link .tagContent {
+padding:15px 0 15px 0;
+}
+
+.text img, .video iframe, .html_photoset, .photo .postContent img {
+border-left: none;
+width: 100%;
+}
+
+
+.dateContent time
+{
+float: left;
+display: inline;
+clear:none;
+text-align: left;
+}
+
+
+.dateContent .reblog {
+	padding-top: 0;
+	float: left;
+	display: inline;
+	clear: none;
+	text-align: left;
+}
+
+
+
+/*-- MARGIN -------------------------------*/
+
+/* Right padding */
+
+.post .photo{
+}
+
+.postContent{
+	padding:0;
+	}
+
+
+/* Left padding */
+
+h2,
+header .postContent h1,
+footer .postContent p,
+header .postContent .about p,
+footer .legals,
+.dateContent time,
+.dateContent .reblog,
+.tagContent ul,
+.tagContent nav,
+.tagContent nav ul li,
+.chat .postContent li,
+.chat .postContent b,
+.quote .postContent figure blockquote,
+.quote .postContent figure figcaption,
+.photo figure figcaption,
+.link .postContent p,
+.link .postContent blockquote,
+.link .postContent p .tumblr_blog a,
+.chat .postContent p,
+.text .postContent p,
+.text .postContent ul, 
+.text .postContent ol,
+.audio .postContent p,
+.audio .postContent ul, 
+.audio .postContent ol,
+.video figcaption,
+.postContent figure figcaption blockquote,
+.about p,
+.results,
+.reblog,
+.blend{
+	padding-left:30px;
+	padding-right:30px;
+	}
+
+.photo figcaption,
+.photoset figcaption{
+	padding: 0;
+	}
+
+
+/* tumblr's new link styling, 17/04/13 */
+
+.link_og_blockquote{
+	margin-left: 25px;
+	padding-top: 5px;
+	padding-bottom:5px;
+	}
+
+
+/* Hang / Compensate */
+
+.text img
+	{
+
+	}
+
+.photo .postContent figure figcaption blockquote,
+.photoset .postContent figure figcaption blockquote,
+.text .postContent figure figcaption blockquote,
+.link .postContent figure figcaption blockquote,
+.video .postContent figure figcaption blockquote
+	{
+	margin-left:0;
+	}
+
+footer .postContent .pPrevious
+	{
+	text-indent:0em
+	}
+
+.text .postContent blockquote	{
+	padding: 0;
+	margin:0;
+	}
+
+.photo .postContent figure figcaption blockquote p:last-child{
+	padding: 0;
+	}
+
+.lArrow{
+	padding:0 0.4em 0 0.6em;
+	}
+
+.rArrow{
+	padding:0 0 0 0.4em ;
+	}
+
+
+.quote figure blockquote {
+	padding-right: 30px;
+}
+
+
+.text img {
+	margin:0;
+	width: 100%;
+}
+
+.tagContent{
+	width: 100%;
+	display: none;
+}
+
+
+
+.about p{
+	color: white;
+}
+
+footer .postContent{
+	background-color: rgb(29, 99, 20);
+}
+
+footer .postContent p,
+footer .postContent p a,
+footer small,
+footer li,
+footer li a
+{
+	color: white;
+
+}
+
+.hangout {
+	padding: 0.1em 0 0 0;
+	font-size: 1.5em;
+	margin-left: -0.46em;
+	display: inline;
+	float: left;
+	}
+
+.quote .postContent figure blockquote
+	{
+	font-size: 1.7em;
+	line-height: 1.1em;
+	letter-spacing:0em;
+	margin-top: 0em;
+	font-style: normal;
+	font-weight: normal;
+	}
+
+
+.postContent{
+	padding: 0 0 30px 0;
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid rgb(29, 99, 20);
+	border-left: none;
+	border-right: none;
+
+}
+
+
+.text .dateContent, 
+.link .dateContent, 
+.audio .dateContent, 
+.video .dateContent, 
+.quote .dateContent {
+padding:10px 0 20px 0;
+margin: 0;
+}
+
+ 
+.photo .dateContent, 
+.photoset .dateContent {
+padding:5px 0;
+margin: 0;
+}
+
+.photo figcaption, .photoset figcaption {
+padding-top: 0.25em;
+}
+
+.photo figure figcaption, .photoset figure figcaption, .video figure figcaption, .quote figure figcaption {
+max-width: 100%;
+}
+
+
+
+.mainContent{
+margin:2em 0 0 0;
+}
+
+.dateContent, .tagContent {
+min-height: 0px;
+}
+
+
+.tagContent nav{
+
+}
+
+.tagContent nav ul{
+	width: 100%;
+	display: block;
+	padding: 0;
+	margin: 0;
+	background-color: blue;
+}
+
+
+
+.tagContent nav ul li{
+	display:inline;
+	padding:0;
+	margin: 0;
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+
+.tagContent nav ul li:first-child{
+	text-align: left;
+}
+
+.tagContent nav ul li:last-child{
+	text-align: right;
+}
+
+
+
+.link blockquote p,
+ header .postContent .about p,
+.tagContent li,
+.text .postContent p, 
+.link .postContent p,
+.link .postContent blockquote,
+.text .postContent li,
+.postContent figure figcaption p, 
+.postContent figure figcaption div, 
+.quote .postContent figure figcaption,
+.copyright
+	{
+	line-height: 1.5em;
+	}
+
+
+
+.blend {
+	margin:0;
+	padding-top:10px;
+	padding-bottom:10px;
+	width: 60%;
+	float: left;
+	}
+
+.blendInfo{
+	margin: 0;
+	padding: 0 8px 0 0;
+	vertical-align: top;
+	display: inline;
+	}
+
+.blendWord{
+	float: none;
+	display: inline;
+	}
+
+.blendNo{
+	float: none;
+	display: inline;
+	padding: 0;
+	}		

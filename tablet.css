@@ -1,0 +1,182 @@
+/*-- Tablet -----------------------------------------------------------*/
+
+
+body
+	{
+	margin-left: 2.5%;
+	margin-right: 5%;
+
+	font-size:106%;
+	}
+
+html>body
+	{
+	font-size: 17px; 
+	}
+
+header .dateContent{
+	display:none;
+	}
+
+
+header .dateContent,
+footer .dateContent,
+.quote .dateContent,
+.text .dateContent,
+.link .dateContent,
+.photo .dateContent,
+.photoset .dateContent,
+.audio .dateContent,
+header .tagContent,
+footer .tagContent,
+.quote .tagContent,
+.text .tagContent,
+.link .tagContent,
+.photo .tagContent,
+.photoset .tagContent,
+.audio .tagContent
+	{
+	width:10%;
+	float:left;
+	text-align: left;
+	opacity: 1;
+	}
+
+
+header .postContent,
+footer .postContent,
+.quote .postContent,
+.text .postContent,
+.link .postContent,
+.photo .postContent,
+.photoset .postContent,
+.video .postContent,
+.audio .postContent{
+	float: right;
+	width: 85%;
+	display: inline;
+	}
+	
+
+.tagContent ul,
+.dateContent p, 
+.dateContent time,
+.footer-links, 
+.dateContent .reblog
+	{
+	text-align: left;
+	float: left;
+	}
+
+header .tagContent nav ul,
+.tagContent ul{
+	padding-left:0;
+	}
+
+ul.tags{
+	text-indent: -0.45rem;
+	}
+
+
+
+
+header .tagContent li{
+	display: block;
+	width: 100%;
+	}
+
+.hangout{
+	padding: 1px 0 0 0;
+	font-size: 1.3em;
+	margin-left: -0.45em;
+	}
+
+/* Left padding */
+
+h2,
+header .postContent h1,
+header .postContent .about p,
+footer .postContent p,
+footer .legals,
+.chat .postContent li,
+.chat .postContent b,
+.quote .postContent figure blockquote,
+.quote .postContent figure figcaption,
+.video figcaption,
+.photo figcaption,
+.photoset figcaption,
+.results,
+.link .postContent blockquote,
+.link .postContent p,
+.link .postContent p .tumblr_blog a,
+.text .postContent p,
+.chat .postContent p
+	{
+	padding-left:30px;
+	}
+
+/* tumblr's new link styling, 17/04/13 */
+
+.link_og_blockquote{
+	margin-left: 20px;
+	}
+
+
+/* TAG CONTENT */
+
+.link .tagContent,
+.chat .tagContent,
+.photo .tagContent,
+.photoset .tagContent,
+.text .tagContent,
+.quote .tagContent
+	{
+	padding-top:0;
+	}
+
+.postContent{
+	border-right:none;	
+	}
+
+header .about p,
+.postContent {
+	padding: 0px;
+	}
+
+
+
+.text ul.tags {
+padding: 1.6em 0 0 0;
+	}
+
+
+header .about p{
+	word-wrap:break-word;	
+}
+
+
+.blend {
+	margin:0;
+	}
+
+.blendInfo{
+	margin: 0;
+	padding: 0 0 4px 0;
+	vertical-align: top;
+	display: block;
+	}
+
+.blendWord{
+	float: left;
+	display: block;
+	display: none;
+
+	}
+
+.blendNo{
+	float: left;
+	display: block;
+	padding: 0 0 0 0.12em;
+	display: none;
+	
+	}

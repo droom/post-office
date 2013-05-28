@@ -1,0 +1,1096 @@
+/*-- Desktop -----------------------------------------------------------*/
+
+body
+	{
+	background: #f1e3c9;		
+	background:#fffff8;	
+	background: rgb(255, 253, 229);
+	background: rgb(255, 254, 236);
+	margin:0 1.4%;
+	font-size:106%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+/*-- LIGATURE SUPPORT----------------------*/
+/*---Credit: Elliot Jay Stocks ------------*/
+	-moz-font-feature-settings:"liga=1, dlig=1"; 
+    -moz-font-feature-settings:"liga", "dlig";
+    -ms-font-feature-settings:"liga", "dlig"; 
+    -o-font-feature-settings:"liga", "dlig"; 
+    -webkit-font-feature-settings:"liga", "dlig"; 
+    font-feature-settings:"liga", "dlig";
+/*-----------------------------------------*/
+	}
+
+html>body
+	{
+	font-size: 17px; 
+	}
+
+/*-----------------------------------------*/
+/*-- TYPOGRAPHY ---------------------------*/
+/*-----------------------------------------*/
+
+/*-- Stacks -------------------------------*/
+.dateContent p,
+.dateContent time,
+.tagContent li,
+.chat .postContent b
+	{
+	font-family:"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	}
+
+h1, 
+h2, 
+h3,
+blockquote,
+.link,
+.results p,
+.chat .postContent li,
+.text .postContent p,
+.link .postContent p,
+.audio .postContent p,
+.postContent li,
+.postLink a,
+.postContent figure figcaption,
+.quote .postContent figure blockquote,
+.quote .postContent figure blockquote figcaption p,
+.quote .postContent figure blockquote figcaption a
+	{
+	font-family: "Georgia Pro", Georgia, Lucida;
+	}
+
+.photo .postContent figcaption blockquote,
+.photo .postContent figcaption blockquote p,
+.photo .postContent figcaption blockquote a,
+.photo .postContent figure figcaption blockquote p,
+.link .postContent blockquote,
+.text .postContent blockquote,
+.text .postContent blockquote p
+	{
+	font-family: georgia;
+	font-style: italic;
+	}
+
+code{
+	font-family:"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size:0.85em;
+	}
+
+/*-- POINT SIZE --------------------------*/
+
+small,
+.imgCap{
+	font-size: 0.5em
+	}
+
+.chat b,
+footer .postContent p,
+.dateContent p, 
+.dateContent time,
+.tagContent li{
+	font-size:0.65em;
+	}
+
+.postContent figure figcaption p,
+.postContent figure figcaption div,
+.quote .postContent figure figcaption,
+.text .postContent p,
+.text .postContent li,
+.post .link blockquote p,
+p.link,
+.postLink a,
+.results p
+	{
+	font-size:1em;
+	}
+
+.chat .postContent li
+	{
+	font-size:1.35rem;
+	}
+
+
+/*-- LINE HEIGHT --------------------------*/
+
+h1, 
+.post ol li
+	{
+	line-height:1em;
+	}
+
+.dateContent p,
+.dateContent time
+	{
+	line-height: 1.2em;
+	}
+
+.link blockquote p,
+header .about p
+header .blend p
+
+	{
+	line-height:1.3em;
+	}
+
+
+figcaption blockquote, 
+blockquote b,
+.chat li
+	{
+	line-height:1.64em
+	}
+
+
+header .tagContent li,
+header .postContent p,
+header .tagContent p
+	{
+	line-height: 1.5em;
+	}
+
+
+.tagContent li,
+.text .postContent p, 
+.audio .postContent p,
+.link .postContent p,
+.link .postContent blockquote,
+.text .postContent li,
+.postContent figure figcaption p, 
+.postContent figure figcaption div, 
+.quote .postContent figure figcaption,
+.copyright
+	{
+	line-height:1.65em;
+	}
+
+.about p,
+.blend p
+	{
+	text-align: left;
+	line-height: 1.55em;
+	}
+
+.footer-links{
+	line-height: 2.55em;
+	}	
+
+footer .postContent p{
+	line-height:2.25em;
+	}	
+
+footer small
+	{
+	line-height: 1.75em;
+	}
+
+/*-- Kerning ------------------------------*/
+
+
+.about p,
+.blend p,
+header .tagContent li
+	{
+	letter-spacing:0.175em;
+	}
+
+.dateContent time,
+footer .postContent
+	{
+	letter-spacing:0.1em;
+	}
+
+
+h1 .char6  { vertical-align: top;margin-left: -0.079em;display: inline-block;position: relative;top: -0.011em; }
+h1 .char4  { vertical-align: top;margin-left: 0.022em; }
+h1 .char3  { vertical-align: top;margin-left: -0.025em; }
+h1 .char10 { vertical-align: top;margin-left: 0.022em; }
+h1 .char11 { vertical-align: top;margin-left: -0.005em; }
+h1 .char9  { vertical-align: top; }
+h1 .char2  { vertical-align: top;margin-left: 0.056em; }
+h1 .char7  { vertical-align: top;display: inline-block;position: relative;top: 0.056em; }
+
+
+
+/*-- Formating ----------------------------*/
+
+p em {
+	font-family:Georgia;
+	font-style:italic;
+	}	
+
+strong
+	{
+	font-family:Georgia;	
+	font-weight:800;
+	}
+
+.postContent a:link,
+.dateContent p,
+.dateContent time,
+.reblog,
+.reblog p,
+.reblog a{
+	word-wrap:break-word;
+	overflow: hidden;
+	}
+
+
+header .about p{
+	word-wrap:break-word;	
+}
+
+
+.footer-links, 
+header .tagContent li,
+footer p
+	{
+	text-transform:uppercase;
+	}
+
+.post .tagContent li,
+.reblog p,
+.reblog a{
+	text-transform: lowercase;
+	}
+
+.text .postContent ul li
+	{
+	list-style: disc;
+	}
+
+.text .postContent ol li
+	{
+	list-style:decimal;
+	}
+
+.italic
+	{
+	font-family: georgia;
+	text-transform:lowercase;
+	font-style:italic;
+	letter-spacing: 0;
+	}
+
+
+/*-----------------------------------------*/
+/*-- COLOUR -------------------------------*/
+/*-----------------------------------------*/
+
+h1,
+h2,
+a,
+p,
+b,
+small,
+figcaption,
+blockquote,
+code,
+li,
+ul,
+time,
+.quote .postContent figure figcaption::before
+	{
+	color:rgb(20, 77, 99);
+	color:rgb(29, 99, 20);
+	color:rgb(32, 83, 26);
+	}
+
+a:link,
+.quote .postContent blockquote a:link 
+	{
+	text-decoration: none;
+	border: none;
+	}
+
+a:hover
+	{
+	color: #131bb4;
+	}
+
+
+
+.postContent a:link{
+	border-bottom:1px solid rgb(29, 99, 20);
+	}
+
+.postContent a:hover{
+	border-bottom:1px solid #131bb4;
+	}
+
+.postContent h1 a:link,
+.postContent h1 a:hover,
+.postContent h2 a:link,
+.postContent h2 a:hover
+	{
+	border-bottom:none;
+	}
+
+::selection
+	{
+	background: #ffffb3;
+	}
+
+::-moz-selection {
+	background: #ffffb3;
+	}
+
+
+/*-----------------------------------------*/
+/*-- BORDERS ------------------------------*/
+/*-----------------------------------------*/
+
+
+.postContent{
+	border-left:solid 1px rgb(20, 77, 99);
+	border-left:solid 1px rgb(29, 99, 20);
+	border-right:solid 1px rgba(29, 99, 20, .1);	
+	}
+
+
+.text img, 
+.video iframe,
+.photo .postContent img,
+.flexslider,
+.tumblr_audio_player{
+	border-left:solid 7px rgb(20, 77, 99);	
+	border-left:solid 7px rgb(29, 99, 20);
+	border-left:solid 7px rgb(32, 83, 26);
+
+	}
+
+.quote .postContent
+	{	
+	border-left:none;
+	}
+
+.postContent figcaption blockquote,
+.link .postContent blockquote,
+.text .postContent blockquote
+	{
+	border-left: 3px solid rgb(29, 99, 20);
+	}
+
+
+/*-----------------------------------------*/
+/*-- OPACITY ------------------------------*/
+/*-----------------------------------------*/
+
+
+
+/*-----------------------------------------*/
+/*-- HEADERS ------------------------------*/
+/*-----------------------------------------*/
+
+
+h1 {
+	font-size: 4.5em;
+	line-height: 0.89em;
+	letter-spacing: -0.05em;
+	margin-left: -0.05em;
+	padding: 1.7em 0 0 0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;	
+	}
+
+h2 {
+	padding: 0 0 0.7em;
+	padding: 0.15em 0 0.4em;
+	padding: 0.09em 0 0.4em;
+	font-size: 1.65em;
+	margin: 0 -0.04em;
+	line-height: 1.2em;
+	}
+
+h3 {
+	font-size:1.4em;
+	letter-spacing:-0.04em;
+	}
+
+
+/*-----------------------------------------*/
+
+
+
+.quote figure blockquote{
+	font-size: 2.5em;
+	line-height: 1.11em;
+	letter-spacing: -0.025em;
+	margin-top: -0.25em;
+	font-style: normal;
+	font-weight: normal;
+	}
+
+.dateContent p,
+.dateContent time
+	{
+	padding:0.2em 3em 0 0;
+	text-align:right;
+	margin:auto;
+	}
+
+.tagContent ul{
+	padding:0;
+	text-align:left;
+	margin:auto;
+	}
+
+
+/*-- STRUCTURAL ---------------------------*/
+
+.wrap{
+	max-width: 1100px;
+	display: block;
+	margin: auto;
+	}
+
+.photo figure,
+footer, 
+.mainContent, 
+.post
+	{
+	width:100%;
+	}
+
+.postContent
+	{
+	width:62%;
+	} 
+
+.photo figure figcaption,
+.photoset figure figcaption,
+.video figure figcaption
+	{
+	}
+
+.photo .postContent,
+.photoet .postContent,
+.text .postContent
+	{
+	overflow:hidden;
+	}
+
+.dateContent{
+	width:15%;
+	min-height:1em;
+	}
+
+.tagContent{
+	width:14%;
+	min-height:1em;
+	}
+
+
+
+
+header .postContent, 
+.link .postContent,
+.quote .postContent, 
+.photo .postContent, 
+.photoset .postContent,
+.dateContent, 
+.tagContent, 
+.hangout, 
+.results, 
+.tags, 
+.post, 
+.postContent, 
+footer, 
+h1{	
+	float:left;
+	}	 
+
+.footer-links,
+.dateContent time,
+.dateContent .reblog
+	{
+	float:right;
+	clear: right;
+	}
+
+footer, 
+.post, 
+.results
+	{
+	clear: left;
+	}
+
+.results
+	{
+	margin-top:5em;
+	margin-left:15%;
+	width:55.3%;	
+	}
+
+.mainContent,
+.dateContent time,
+.dateContent .reblog,
+.results, 
+figcaption, 
+.odd b, 
+.even b, 
+.video iframe, 
+.video figcaption, 
+.post, footer, 
+.quote figure blockquote,
+.quote figure figcaption,
+.postContent figcaption small,
+.tagContent li
+	{
+	display:block;
+	}
+
+
+
+/*-- BASELINE -----------------------------*/
+/*-- GRID ---------------------------------*/
+
+.mainContent
+	{
+	margin: 7em 0 0 0;
+	float: left;
+	}
+
+
+.text .dateContent,
+.link .dateContent,
+.photo .dateContent,
+.photoset .dateContent,
+.audio .dateContent,
+.video .dateContent,
+.quote .dateContent
+	{
+	padding:1em 0 0;
+	}
+
+.photo .tagContent,
+.photoset .tagContent,
+.quote .tagContent,
+.audio .tagContent,
+.video .tagContent
+	{
+	padding:0.9em 0 0;
+	}
+
+/* TAG CONTENT */
+
+.link .tagContent
+	{
+	padding:3.87em 0 0;
+	}
+
+.text .tagContent
+	{
+	padding:4.2em 0 0
+	}
+
+.chat .tagContent
+	{
+	padding:2.6em 0 0;
+	}
+
+.chat .dateContent
+	{
+	padding: 1em 0 0;
+	}	
+
+
+.text .postContent img{
+	margin:1.3em 0 0.32em;
+	}
+
+.tumblr_blog
+	{
+	padding-top:0.5em;
+	}	
+
+.photo figcaption,
+.photoset figcaption
+	{
+	padding:0.25em 0 1em;
+	}
+
+.chat .postContent ul 
+	{
+	padding:0.85em 0 0 0;
+	}
+
+.chat .postContent li 
+	{
+	padding: 0.25em 0 0.25em;
+	line-height: 1.2em;
+	}
+
+.quote .postContent figure figcaption
+	{
+	padding:2em 0 0;
+	}
+
+.text .postContent ul,
+.text .postContent ol
+	{
+	padding:0.1em 0 0 4em;
+	}
+
+.postContent figcaption small,
+.imgCap{
+	padding: 0 0 0.8em;
+	}
+
+.video .postContent, 
+.photo .postContent,
+.photoset .postContent
+	{	
+	padding:0 45px 15px -25px;
+	}
+
+.link blockquote p
+	{
+	padding:1em 0 0 0;
+	}
+
+footer .pagination,
+footer .home
+	{
+	padding:0 0 5.5em 0;
+	}	
+
+footer .postContent
+	{
+	padding-top:0.75em;
+	padding-bottom: 1.5em;
+	}
+
+footer .legals
+	{
+	display:block;
+	}
+
+.text,
+.photo,
+.photoset,
+.chat,
+.link,
+.audio,
+.video
+	{
+	margin:0 0 6.2em 0;
+	}
+
+.quote
+	{
+	margin:1em 0 6.2em 0;
+	}
+
+.reblog
+	{
+	padding:0.85em 0 0 0;
+	}
+
+.postContent figure figcaption blockquote
+	{
+	margin:0;
+	}
+
+
+header nav{
+	padding-top: 15px
+}
+
+.about,
+.blend{
+	padding-top: 1em
+	}
+
+
+.mainContent .postContent p,
+.mainContent .postContent li
+	{
+	padding:1.3em 0 0.36em;
+	}
+
+.photo .postContent figure figcaption p,
+.photo .postContent figure figcaption div
+.video .postContent figure figcaption p,
+.video .postContent figure figcaption div
+	{
+	padding: 0.8em 0 0.8em;
+	}
+
+.photo .postContent figure figcaption blockquote p,
+.photo .postContent figure figcaption blockquote div
+.video .postContent figure figcaption blockquote p,
+.video .postContent figure figcaption blockquote div,
+.photoset .postContent figure figcaption blockquote p,
+.photoset .postContent figure figcaption blockquote div
+	{
+	padding-top:0;
+	}
+
+
+/*-- MARGIN -------------------------------*/
+
+/* Right padding */
+
+.postContent{
+	padding:0px 30px 0 0;
+	}
+
+.photoset .postContent{
+	}	
+
+/* Left padding */
+
+h2,
+header .postContent h1,
+header .about p,
+footer .postContent p,
+footer .legals,
+.chat .postContent li,
+.chat .postContent b,
+.quote .postContent figure blockquote,
+.quote .postContent figure figcaption,
+.postContent figure figcaption blockquote,
+.video figcaption,
+.photo figcaption,
+.photoset figcaption,
+.tagContent ul,
+.results,
+.link .postContent blockquote,
+.link .postContent p,
+.link .postContent p .tumblr_blog a,
+.text .postContent p,
+.chat .postContent p,
+.audio .postContent p
+	{
+	padding-left:30px;
+	}
+
+
+/* tumblr's new link styling, 17/04/13 */
+
+.text .postContent blockquote,
+.link_og_blockquote{
+	margin-top: 7px;
+	margin-left: 30px;
+	padding-top: 5px;
+	padding-bottom:5px;
+	}
+
+/* Hang / Compensate */
+
+.hangout
+	{
+	padding:7px 4px 0 0;
+	font-size:1.7em;
+	margin-left:-0.5em	}
+
+
+.photo .postContent figure figcaption blockquote,
+.photoset .postContent figure figcaption blockquote,
+.text .postContent figure figcaption blockquote,
+.link .postContent figure figcaption blockquote,
+.video .postContent figure figcaption blockquote
+	{
+	}
+
+footer .postContent .pPrevious
+	{
+	text-indent:-1.58em;
+	}
+
+
+
+.photo .postContent figure figcaption blockquote p:last-child{
+	padding: 0;
+}	
+
+
+.lArrow{
+	padding:0 0.4em 0 0.6em;
+	}
+
+.rArrow{
+	padding:0 0 0 0.4em ;
+	}
+
+
+/*-- CONTENT -------------------------------*/
+/*------------------------------------------*/
+/*-- PREPEND -------------------------------*/
+
+
+
+/*
+
+.postLink
+	{
+	  	background: url('svg/triangle.svg');
+		background-color: red;
+	  	background-repeat: no-repeat;
+		background-position: -0.19em 1.8em;
+		-webkit-background-size: 0.75em 0.75em;
+   		-o-background-size: 0.75em 0.75em;
+   		-moz-background-size: 0.75em 0.75em;
+   		background-size:0.75em 0.75em;
+		}
+*/
+
+
+.postLink::before{
+	content: "\25ba";
+	padding: 0 18px 0 0;
+	font-size: 0.75em;
+	margin-left:-31px;
+	font-family: 'rice';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	}
+
+
+
+.post .tagContent li::before{
+	content: "#";
+	padding: 0 0.15em 0 0;
+	}
+
+.quote .postContent figure figcaption::before{
+	content: "—";
+	margin-left: -1.3em;
+	font-size: 1em;
+	display: inline;
+	padding: 0 0.45em 0 0;
+	}
+
+/*-- DEVELOPMENT -----------------------------*/
+
+header .postContent,
+.text .postContent,
+.photo .postContent,
+.link .postContent,
+.audio .postContent,
+.video .postContent,
+.chat .postContent,
+.tagContent,
+.dateContent,
+.quote .postContent,
+.quote .dateContent,
+.quote .tagContent,
+footer .postContent
+	{
+	}
+
+/*--------------------------------------------*/
+
+.about,
+.blend
+	{
+	float: left;
+	width: 100%;
+	}
+	
+header .postContent{
+	border-right:none;
+	}
+
+.tagContent,
+.dateContent{
+	z-index: 3;
+	}
+
+.postContent{
+	z-index: -3;
+	}
+
+
+
+
+p, ul, ol, li {
+ -moz-font-feature-settings:"onum" 1, "pnum" 1;
+ -ms-font-feature-settings:*"onum" 1,*"pnum" 1;
+ -o-font-feature-settings:*"onum" 1,*"pnum" 1;
+ -webkit-font-feature-settings: "onum" 1, "pnum" 1;
+ -font-feature-settings: "onum" 1, "pnum" 1;
+}
+
+
+.imgCap,
+.smallCaps,
+.legals,
+.pagination{
+	font-family: "Georgia Pro ";
+	font-style: normal;
+	font-weight: normal;
+	font-feature-settings: "smcp";
+	-moz-font-feature-settings: 'smcp=1';
+	-ms-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	-o-font-feature-settings: "smcp";
+	}
+
+header .about p,
+header .blend p{
+	font-size: 0.65em;
+}
+
+
+header .about p,
+header .blend p,
+.legals{
+	font-family: "Georgia Pro";
+	font-style: normal;
+	font-weight: normal;
+	font-feature-settings: "smcp";
+	-moz-font-feature-settings: 'smcp=1';
+	-ms-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	-o-font-feature-settings: "smcp";
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	}
+
+
+/****
+header .tagContent li{
+	list-style: disc;
+	overflow: visible;
+	line-height: 2.8em;
+	display: none;
+}
+header .tagContent li::before
+	{
+	content: "∙ ";
+	float: left;
+	color:rgb(29, 99, 20);
+	font-size: 2em;
+	padding:0 0.9em 0 0 ;
+	margin:0 -0.7em 0 0 ;
+	}
+#searchTags{
+	background: none;
+	border: none;
+		border-bottom:1px solid rgb(29, 99, 20);
+	font-family:"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+padding:0.25em 0 0;
+	color: rgb(29, 99, 20);
+ 
+}
+**/
+
+
+
+#tumblr_controls{
+	visibility: hidden;
+}
+
+#tumblrreblog{
+	float: left;
+	margin-top: 6px;
+	border:1px solid rgb(29, 99, 20);
+	letter-spacing: 0.1em;
+	padding:6px 8px;
+}
+
+
+#tumblrreblog:hover
+{
+	background-color: rgb(29, 99, 20);
+	color: #fff;
+
+}
+
+
+#xpm0-hide {
+	display: none;
+}
+
+
+.about,
+.blend{
+	overflow: visible;
+}
+
+.blend{
+margin-left: 0.6em;
+}
+
+
+
+footer .legals .italic{
+	border-bottom: none;
+}
+
+
+
+/* SVG */
+
+@font-face {
+	font-family: 'rice';
+	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot');
+	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot?#iefix') format('embedded-opentype'),
+		url('http://static.tumblr.com/wwbixja/nnFmnitxr/rice.woff') format('woff'),
+		url('http://static.tumblr.com/wwbixja/Ob3mnitym/rice.ttf') format('truetype'),
+		url('fonts/rice.svg#rice') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+
+.riceIcons {
+	font-family: 'rice';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+}
+
+.blendInfo{
+	font-size:1.65em;
+	margin-left: -1em;
+	margin-top: -2em;
+	padding-right:7px;
+	vertical-align:bottom;
+}
+
+
+.audioCredits{
+	line-height: 1em;
+	padding-bottom: 1.6em;
+}
+
+
+#thisAudio{
+	margin: 1.2em 0 0 0;
+
+}
+
+
+.audio_player.white{
+	background-color: red;
+}
+
+
+.tumblr_audio_player .tumblr_audio_player_51415801954{
+	background-color: blue;
+}
+
+
+#audio_player_51415801954{
+	display: inline;
+}
+
+
+.tumblr_audio_player {
+}
+
+.mainContent .postContent img{
+	max-width: 100%;
+	}
