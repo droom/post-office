@@ -1,25 +1,61 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+
+body {
+	line-height: 1;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+	}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+
 /*-- Desktop -----------------------------------------------------------*/
 
 body
 	{
-	background: #f1e3c9;		
-	background:#fffff8;	
-	background: rgb(255, 253, 229);
-	background: rgb(255, 254, 236);
+	background:#fffff9;	
 	margin:0 1.4%;
 	font-size:106%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-
-/*-- LIGATURE SUPPORT----------------------*/
-/*---Credit: Elliot Jay Stocks ------------*/
-	-moz-font-feature-settings:"liga=1, dlig=1"; 
-    -moz-font-feature-settings:"liga", "dlig";
-    -ms-font-feature-settings:"liga", "dlig"; 
-    -o-font-feature-settings:"liga", "dlig"; 
-    -webkit-font-feature-settings:"liga", "dlig"; 
-    font-feature-settings:"liga", "dlig";
-/*-----------------------------------------*/
 	}
 
 html>body
@@ -31,20 +67,22 @@ html>body
 /*-- TYPOGRAPHY ---------------------------*/
 /*-----------------------------------------*/
 
-/*-- Stacks -------------------------------*/
-.dateContent p,
-.dateContent time,
-.tagContent li,
-.chat .postContent b
-	{
-	font-family:"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-	}
-
 h1, 
 h2, 
 h3,
 blockquote,
+header .about p,
+header .blend p,
+.legal,
+.imgCap,
+.smallCaps,
+.legals,
+.page,
 .link,
+.btnNav,
+.btnTask,
+.reblog_button,
+.followBtn p,
 .results p,
 .chat .postContent li,
 .text .postContent p,
@@ -55,33 +93,86 @@ blockquote,
 .postContent figure figcaption,
 .quote .postContent figure blockquote,
 .quote .postContent figure blockquote figcaption p,
-.quote .postContent figure blockquote figcaption a
-	{
-	font-family: "Georgia Pro", Georgia, Lucida;
+.quote .postContent figure blockquote figcaption a {
+	font-family:"Georgia Pro", sans-serif;
+	font-style:normal;
+	font-weight:normal;
 	}
 
+p em,
+.italic,
 .photo .postContent figcaption blockquote,
 .photo .postContent figcaption blockquote p,
 .photo .postContent figcaption blockquote a,
 .photo .postContent figure figcaption blockquote p,
 .link .postContent blockquote,
 .text .postContent blockquote,
-.text .postContent blockquote p
-	{
-	font-family: georgia;
-	font-style: italic;
+.text .postContent blockquote p	{
+	font-family:Georgia, sans-serif;
+	font-style:italic;
 	}
 
-code{
-	font-family:"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-	font-size:0.85em;
+strong
+	{
+	font-family:Georgia, sans-serif;
+	font-weight:800;
 	}
+
+
+code,
+.dateContent p,
+.dateContent time,
+.tagContent li,
+.chat .postContent b
+	{
+	font-family: 'Inconsolata', serif;
+	}	
+
+
+/*-- LIGATURES, SMALL-CAPS -----------------------*/
+
+h1, h2, p, li, figcaption{
+	-moz-font-feature-settings:"liga=1, dlig=1"; 
+	-moz-font-feature-settings:"liga", "dlig"; 
+    -ms-font-feature-settings:"liga", "dlig"; 
+    -o-font-feature-settings:"liga", "dlig"; 
+    -webkit-font-feature-settings:"liga", "dlig"; 
+    font-feature-settings:"liga", "dlig";
+	}
+
+p, ul, ol, li {
+	-moz-font-feature-settings:"onum" 1, "pnum" 1;
+	-ms-font-feature-settings:*"onum" 1,*"pnum" 1;
+	-o-font-feature-settings:*"onum" 1,*"pnum" 1;
+	-webkit-font-feature-settings: "onum" 1, "pnum" 1;
+	-font-feature-settings: "onum" 1, "pnum" 1;
+	}
+
+header .about p,
+header .blend p,
+.imgCap,
+.smallCaps,
+.legals,
+.page {
+	font-feature-settings: "smcp";
+	-moz-font-feature-settings: 'smcp=1';
+	-ms-font-feature-settings: "smcp";
+	-webkit-font-feature-settings: "smcp";
+	-o-font-feature-settings: "smcp";
+	}
+
 
 /*-- POINT SIZE --------------------------*/
 
+header .about p,
+header .blend p,
+header .followBtn p{
+	font-size: 0.65em;
+	}
+
 small,
 .imgCap{
-	font-size: 0.5em
+	font-size: 0.5em;
 	}
 
 .chat b,
@@ -90,6 +181,10 @@ footer .postContent p,
 .dateContent time,
 .tagContent li{
 	font-size:0.65em;
+	}
+
+code {
+	font-size: 0.8em;
 	}
 
 .postContent figure figcaption p,
@@ -110,37 +205,33 @@ p.link,
 	font-size:1.35rem;
 	}
 
+.hangout {
+	font-size: 1.7em;
+	}
 
-/*-- LINE HEIGHT --------------------------*/
 
-h1, 
-.post ol li
-	{
-	line-height:1em;
+/*-- LEADING  --------------------------*/
+
+figcaption small {
+	line-height: 0.5em;
+	}
+
+
+.audioCredits{
+	line-height: 1em;
 	}
 
 .dateContent p,
-.dateContent time
-	{
+.dateContent time {
 	line-height: 1.2em;
 	}
 
 .link blockquote p,
-header .about p
+header .about p,
 header .blend p
-
 	{
 	line-height:1.3em;
 	}
-
-
-figcaption blockquote, 
-blockquote b,
-.chat li
-	{
-	line-height:1.64em
-	}
-
 
 header .tagContent li,
 header .postContent p,
@@ -149,35 +240,40 @@ header .tagContent p
 	line-height: 1.5em;
 	}
 
+code {
+	line-height: 1.55em;
+	}	
 
+.results p,
 .tagContent li,
-.text .postContent p, 
-.audio .postContent p,
-.link .postContent p,
-.link .postContent blockquote,
-.text .postContent li,
-.postContent figure figcaption p, 
-.postContent figure figcaption div, 
-.quote .postContent figure figcaption,
+.postContent p, 
+.postContent blockquote,
+.postContent li,
+.postContent ol,
+.postContent figure figcaption,
+.postContent figure figcaption p,
+.postContent figure figcaption div,
 .copyright
 	{
 	line-height:1.65em;
 	}
 
+
+figcaption blockquote, 
+blockquote b {
+	line-height:1.64em
+	}
+
+.mainContent .chat .postContent li
+	{
+	line-height:1.4em
+	}	
+
 .about p,
 .blend p
 	{
-	text-align: left;
 	line-height: 1.55em;
 	}
-
-.footer-links{
-	line-height: 2.55em;
-	}	
-
-footer .postContent p{
-	line-height:2.25em;
-	}	
 
 footer small
 	{
@@ -186,10 +282,10 @@ footer small
 
 /*-- Kerning ------------------------------*/
 
-
 .about p,
 .blend p,
-header .tagContent li
+header .tagContent li,
+header .followBtn p
 	{
 	letter-spacing:0.175em;
 	}
@@ -200,82 +296,91 @@ footer .postContent
 	letter-spacing:0.1em;
 	}
 
+figcaption small,
+header .about p,
+header .blend p,
+.legals {
+	letter-spacing: 0.2em;
+	}
 
-h1 .char6  { vertical-align: top;margin-left: -0.079em;display: inline-block;position: relative;top: -0.011em; }
-h1 .char4  { vertical-align: top;margin-left: 0.022em; }
-h1 .char3  { vertical-align: top;margin-left: -0.025em; }
-h1 .char10 { vertical-align: top;margin-left: 0.022em; }
-h1 .char11 { vertical-align: top;margin-left: -0.005em; }
-h1 .char9  { vertical-align: top; }
-h1 .char2  { vertical-align: top;margin-left: 0.056em; }
-h1 .char7  { vertical-align: top;display: inline-block;position: relative;top: 0.056em; }
+.italic{
+	letter-spacing: 0;
+	}
 
+.h1_1 { margin-right: -0.01em }  /* R */
+.h1_2 { margin-right: -0.03em }  /* i */
+.h1_3 { margin-right: 0.01em  }  /* c */
+.h1_4 { margin-right: -0.13em }  /* e */
+.h1_5 { margin-left: 0.05em; font-size:0.9em; vertical-align: center; }  /* + */
+.h1_6 { margin-right: -0.01em }  /* S */
+.h1_7 { margin-right: 0em  }  /* a */
+.h1_8 { margin-right: -0.02em }  /* l */
+.h1_9 { margin-right: 0.02em  }  /* t */
 
 
 /*-- Formating ----------------------------*/
 
-p em {
-	font-family:Georgia;
-	font-style:italic;
+.about p,
+.blend p,
+.tagContent ul
+	{
+	text-align: left;
+	}
+
+.dateContent p,
+.dateContent time
+	{
+	text-align:right;
 	}	
 
-strong
-	{
-	font-family:Georgia;	
-	font-weight:800;
-	}
-
-.postContent a:link,
-.dateContent p,
-.dateContent time,
-.reblog,
-.reblog p,
-.reblog a{
-	word-wrap:break-word;
-	overflow: hidden;
-	}
-
-
-header .about p{
-	word-wrap:break-word;	
-}
-
-
+.legals,
+.chat b,
 .footer-links, 
+header .about p,
+header .blend p,
 header .tagContent li,
 footer p
 	{
 	text-transform:uppercase;
 	}
 
+.italic,
 .post .tagContent li,
 .reblog p,
 .reblog a{
-	text-transform: lowercase;
+	text-transform:lowercase;
 	}
 
-.text .postContent ul li
+.reblog p a:link,
+.SourceURL,
+header .about p,
+.postContent a:link,
+.dateContent p,
+.reblog,
+.reblog p,
+.reblog a{
+	word-wrap:break-word;
+	}
+
+
+.mainContent .postContent ul li
 	{
 	list-style: disc;
 	}
 
-.text .postContent ol li
+.mainContent .postContent ol li
 	{
 	list-style:decimal;
 	}
 
-.italic
+.mainContent .chat .postContent ul li,
+.mainContent .chat .postContent ol li
 	{
-	font-family: georgia;
-	text-transform:lowercase;
-	font-style:italic;
-	letter-spacing: 0;
-	}
+	list-style: none;
+	}	
 
 
-/*-----------------------------------------*/
-/*-- COLOUR -------------------------------*/
-/*-----------------------------------------*/
+/*-- PALLETTE -------------------------------*/
 
 h1,
 h2,
@@ -289,119 +394,129 @@ code,
 li,
 ul,
 time,
-.quote .postContent figure figcaption::before
-	{
-	color:rgb(20, 77, 99);
-	color:rgb(29, 99, 20);
-	color:rgb(32, 83, 26);
+.quote .postContent figure figcaption::before {
+	color:#20531a;
 	}
 
-a:link,
-.quote .postContent blockquote a:link 
-	{
-	text-decoration: none;
-	border: none;
-	}
-
-a:hover
-	{
-	color: #131bb4;
-	}
-
-
-
-.postContent a:link{
-	border-bottom:1px solid rgb(29, 99, 20);
-	}
-
-.postContent a:hover{
-	border-bottom:1px solid #131bb4;
-	}
-
-.postContent h1 a:link,
-.postContent h1 a:hover,
-.postContent h2 a:link,
-.postContent h2 a:hover
-	{
-	border-bottom:none;
-	}
-
-::selection
-	{
-	background: #ffffb3;
+::selection {
+	background: #ffefef;
 	}
 
 ::-moz-selection {
-	background: #ffffb3;
+	background: #ffefef;
+	}
+
+
+/*-- SELECT -----------------------------*/
+
+header,
+.blend,
+.dateContent,
+.tagContent{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	}
+
+/*-- LINKS  -------------------------------*/
+
+a:link,
+.photo .postContent figure figcaption a {
+	text-decoration: none;
+	border-bottom:1px solid #20531a;
+	}
+
+
+h1 a:link,
+h2 a:link,
+time a:link,
+.postNumber a:link,
+.tags a:link,
+.reblog p a:link,
+.blend p a:link,
+.resultTag a:link,
+.pullQuote a:link,
+.reblog_button:link,
+.reblog_button:hover,
+footer .btnNav a:link{
+	border-bottom: none;
+	}
+
+a:hover,
+time a:hover,
+.tags a:hover,
+.blend p a:hover,
+.reblog p a:hover,
+.photo .postContent figure figcaption a:hover,
+.legals a:hover{
+	text-decoration: none;
+	color: #131bb4;
+	border-bottom:1px solid #131bb4;
+	}
+
+.resultTag:hover{
+	text-decoration:line-through;
+	}
+
+.btnTask p a,
+.postNumber a:link,
+.resultTag a:link{
+	text-decoration: none;
 	}
 
 
 /*-----------------------------------------*/
 /*-- BORDERS ------------------------------*/
 /*-----------------------------------------*/
-
-
 .postContent{
-	border-left:solid 1px rgb(20, 77, 99);
-	border-left:solid 1px rgb(29, 99, 20);
-	border-right:solid 1px rgba(29, 99, 20, .1);	
-	}
-
-
-.text img, 
-.video iframe,
-.photo .postContent img,
-.flexslider,
-.tumblr_audio_player{
-	border-left:solid 7px rgb(20, 77, 99);	
-	border-left:solid 7px rgb(29, 99, 20);
-	border-left:solid 7px rgb(32, 83, 26);
-
-	}
-
-.quote .postContent
-	{	
-	border-left:none;
+	border-left:solid 1px #20531a;
+	border-right:solid 1px rgba(32, 83, 26, .1);	
 	}
 
 .postContent figcaption blockquote,
 .link .postContent blockquote,
 .text .postContent blockquote
 	{
-	border-left: 3px solid rgb(29, 99, 20);
+	border-left: 3px solid #20531a;
 	}
 
+.text img, 
+.video iframe,
+.photoset_row img,
+.postContent code,
+.photo .postContent img,
+.flexslider,
+.tumblr_audio_player{
+	border-left:solid 7px #20531a;
+	}
 
-/*-----------------------------------------*/
-/*-- OPACITY ------------------------------*/
-/*-----------------------------------------*/
+.photo .postContent figure a {
+	border: none;
+	}
 
+.quote .postContent	{	
+	border-left:none;
+	}
 
-
-/*-----------------------------------------*/
-/*-- HEADERS ------------------------------*/
-/*-----------------------------------------*/
-
+header .postContent {
+	border-right:none;
+	}
 
 h1 {
 	font-size: 4.5em;
-	line-height: 0.89em;
+	line-height: 0.875em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
 	padding: 1.7em 0 0 0;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;	
+	width: inherit;
 	}
 
 h2 {
-	padding: 0 0 0.7em;
-	padding: 0.15em 0 0.4em;
+	font-size: 1.65em;	
 	padding: 0.09em 0 0.4em;
-	font-size: 1.65em;
 	margin: 0 -0.04em;
 	line-height: 1.2em;
 	}
@@ -410,11 +525,6 @@ h3 {
 	font-size:1.4em;
 	letter-spacing:-0.04em;
 	}
-
-
-/*-----------------------------------------*/
-
-
 
 .quote figure blockquote{
 	font-size: 2.5em;
@@ -425,27 +535,15 @@ h3 {
 	font-weight: normal;
 	}
 
-.dateContent p,
-.dateContent time
-	{
-	padding:0.2em 3em 0 0;
-	text-align:right;
-	margin:auto;
-	}
-
-.tagContent ul{
-	padding:0;
-	text-align:left;
-	margin:auto;
-	}
-
 
 /*-- STRUCTURAL ---------------------------*/
 
 .wrap{
 	max-width: 1100px;
-	display: block;
-	margin: auto;
+	}
+
+.mainContent .postContent img{
+	max-width: 100%;
 	}
 
 .photo figure,
@@ -459,19 +557,10 @@ footer,
 .postContent
 	{
 	width:62%;
-	} 
-
-.photo figure figcaption,
-.photoset figure figcaption,
-.video figure figcaption
-	{
 	}
 
-.photo .postContent,
-.photoet .postContent,
-.text .postContent
-	{
-	overflow:hidden;
+.results{
+	width:55.3%;	
 	}
 
 .dateContent{
@@ -484,9 +573,17 @@ footer,
 	min-height:1em;
 	}
 
+.wrap,
+.dateContent p,
+.dateContent time,
+.tagContent ul{
+	margin:auto;
+	}
 
 
+/*-- FLOATS -----------------------------*/
 
+.mainContent .postContent img,
 header .postContent, 
 .link .postContent,
 .quote .postContent, 
@@ -497,9 +594,15 @@ header .postContent,
 .hangout, 
 .results, 
 .tags, 
-.post, 
-.postContent, 
-footer, 
+.post,
+.btnNav,
+.btnNav a,
+.blendInfo,
+.pageCount,
+.postContent,
+.mainContent,
+footer,
+footer .legals,
 h1{	
 	float:left;
 	}	 
@@ -509,28 +612,47 @@ h1{
 .dateContent .reblog
 	{
 	float:right;
-	clear: right;
 	}
 
-footer, 
+.about,
+.blend {
+	float:none;
+	}
+
+footer,
+footer .legals,
 .post, 
-.results
+.results,
+.pageCount,
+.photo figure figcaption,
+.photoset figure figcaption,
+.video figure figcaption
 	{
-	clear: left;
+	clear:left;
 	}
 
-.results
-	{
-	margin-top:5em;
-	margin-left:15%;
-	width:55.3%;	
+.footer-links,
+.dateContent time,
+.dateContent .reblog {
+	clear:right;
 	}
 
+
+
+/*-- DISPLAY -----------------------------*/
+
+code,
+.chat b,
+.pageCount,
+.btnNav,
+.reblog_button,
+.wrap,
 .mainContent,
 .dateContent time,
 .dateContent .reblog,
 .results, 
-figcaption, 
+figcaption,
+footer .legals,
 .odd b, 
 .even b, 
 .video iframe, 
@@ -544,17 +666,40 @@ figcaption,
 	display:block;
 	}
 
+#audio_player_51415801954{
+	display:inline;
+	}
+
+.reblog_button svg,
+#xpm0-hide {
+	display:none;
+	}
+
+#tumblr_controls{
+	visibility: hidden;
+	}
+
+/*-- OVERFLOW -----------------------------*/
+
+.photo .postContent,
+.photoet .postContent,
+.text .postContent
+	{
+	overflow:hidden;
+	}
+
+.about,
+.blend{
+	overflow:visible;
+	}
 
 
 /*-- BASELINE -----------------------------*/
-/*-- GRID ---------------------------------*/
 
 .mainContent
 	{
-	margin: 7em 0 0 0;
-	float: left;
+	margin: 3.2em 0 0 0;
 	}
-
 
 .text .dateContent,
 .link .dateContent,
@@ -562,42 +707,29 @@ figcaption,
 .photoset .dateContent,
 .audio .dateContent,
 .video .dateContent,
-.quote .dateContent
+.quote .dateContent,
+.chat .dateContent
 	{
 	padding:1em 0 0;
 	}
 
+.link .tagContent,
 .photo .tagContent,
 .photoset .tagContent,
 .quote .tagContent,
 .audio .tagContent,
 .video .tagContent
 	{
-	padding:0.9em 0 0;
+	padding:1.1em 0 0;
 	}
 
-/* TAG CONTENT */
-
-.link .tagContent
-	{
-	padding:3.87em 0 0;
+.text .tagContent {
+	padding:4.4em 0 0
 	}
 
-.text .tagContent
-	{
-	padding:4.2em 0 0
-	}
-
-.chat .tagContent
-	{
+.chat .tagContent {
 	padding:2.6em 0 0;
 	}
-
-.chat .dateContent
-	{
-	padding: 1em 0 0;
-	}	
-
 
 .text .postContent img{
 	margin:1.3em 0 0.32em;
@@ -614,60 +746,34 @@ figcaption,
 	padding:0.25em 0 1em;
 	}
 
-.chat .postContent ul 
-	{
-	padding:0.85em 0 0 0;
-	}
-
-.chat .postContent li 
-	{
-	padding: 0.25em 0 0.25em;
-	line-height: 1.2em;
-	}
-
 .quote .postContent figure figcaption
 	{
 	padding:2em 0 0;
 	}
 
-.text .postContent ul,
-.text .postContent ol
-	{
-	padding:0.1em 0 0 4em;
+.mainContent .postContent ul,
+.mainContent .postContent ol{
+	padding-left:3.65em;
 	}
 
-.postContent figcaption small,
-.imgCap{
-	padding: 0 0 0.8em;
-	}
-
-.video .postContent, 
-.photo .postContent,
-.photoset .postContent
-	{	
-	padding:0 45px 15px -25px;
-	}
-
-.link blockquote p
-	{
+.link blockquote p{
 	padding:1em 0 0 0;
 	}
 
-footer .pagination,
-footer .home
-	{
-	padding:0 0 5.5em 0;
-	}	
-
 footer .postContent
 	{
-	padding-top:0.75em;
-	padding-bottom: 1.5em;
+	padding-top:1.55em;
+	padding-bottom: 2.5em;
 	}
 
-footer .legals
+.dateContent p,
+.dateContent time
 	{
-	display:block;
+	padding:0.2em 3em 0 0;
+	}
+
+footer .legals{
+	margin-top: 5em;
 	}
 
 .text,
@@ -678,12 +784,12 @@ footer .legals
 .audio,
 .video
 	{
-	margin:0 0 6.2em 0;
+	margin:0 0 5.95em 0;
 	}
 
 .quote
 	{
-	margin:1em 0 6.2em 0;
+	margin:0.8em 0 6.15em 0;
 	}
 
 .reblog
@@ -691,36 +797,48 @@ footer .legals
 	padding:0.85em 0 0 0;
 	}
 
-.postContent figure figcaption blockquote
-	{
-	margin:0;
+.chat b{
+	padding-top:0.8em;
 	}
 
-
-header nav{
-	padding-top: 15px
+header .postContent{
+	display:block;
+	margin-bottom:3.2em;
 }
 
+header nav{
+	padding-top:15px
+	}
+
 .about,
-.blend{
-	padding-top: 1em
+.blend,
+figcaption small{
+	padding-top:1em;
+	}
+
+.mainContent .postContent ul{
+	padding-top:0.65em;
+	}
+
+.mainContent .chat .postContent li{
+	padding: 0.25em 0 0.25em;
 	}
 
 
 .mainContent .postContent p,
-.mainContent .postContent li
-	{
-	padding:1.3em 0 0.36em;
-	}
-
 .photo .postContent figure figcaption p,
 .photo .postContent figure figcaption div
 .video .postContent figure figcaption p,
 .video .postContent figure figcaption div
 	{
-	padding: 0.8em 0 0.8em;
+	padding-top:1.3em;
 	}
 
+
+.photo figure figcaption,
+.photoset figure figcaption,
+.video figure figcaption,
+.mainContent .quote .postContent figcaption p,
 .photo .postContent figure figcaption blockquote p,
 .photo .postContent figure figcaption blockquote div
 .video .postContent figure figcaption blockquote p,
@@ -731,36 +849,92 @@ header nav{
 	padding-top:0;
 	}
 
-
-/*-- MARGIN -------------------------------*/
-
-/* Right padding */
-
-.postContent{
-	padding:0px 30px 0 0;
+.mainContent .quote .postContent figcaption p:last-child,
+.mainContent .postContent li,
+.photo figure figcaption,
+.photoset figure figcaption,
+.video figure figcaption
+	{
+	padding-bottom:0;
 	}
 
-.photoset .postContent{
+.photo .postContent figure figcaption blockquote p:last-child,
+.photo .postContent figure a{
+	padding:0;
+	}
+
+.mainContent .quote .postContent figcaption,
+.mainContent .quote .postContent figcaption p,
+.photo .postContent figure a,
+.postContent figure figcaption blockquote {
+	margin:0;
+	}
+
+.mainContent .postContent ul li{
+	padding-bottom: 1em;
 	}	
 
-/* Left padding */
+.audioCredits{
+	padding-bottom: 1.6em;
+	}
+
+#thisAudio{
+	margin: 1.2em 0 0 0;
+	}
+
+.mainContent .quote .postContent figcaption {
+	padding-top: 1.3em;
+	}
+
+.mainContent .quote .postContent figcaption p {
+	padding-bottom: 1.3em;
+	}
+
+.link_og_blockquote{
+	margin-top: 14px;
+	margin-left:46px;
+	margin-right: 30px;
+	}
+
+.link_og_blockquote{
+	padding-left: 15px;
+	}
+
+.mainContent .postContent ul{
+	padding-right: 30px;
+	}
+
+.mainContent .postContent .singleFile ul li{
+	padding-bottom: 0 !important;
+	}
+
+.results{
+	margin-left:15%;
+	padding: 1em 0;
+	}
+
+
+/*-- GUTTERS -------------------------------*/
+
+.postContent{
+	padding:0 30px 3px 0;
+	}
 
 h2,
 header .postContent h1,
 header .about p,
-footer .postContent p,
 footer .legals,
 .chat .postContent li,
-.chat .postContent b,
+.chat .postContent ul,
 .quote .postContent figure blockquote,
 .quote .postContent figure figcaption,
+.quote .postContent blockquote,
 .postContent figure figcaption blockquote,
 .video figcaption,
 .photo figcaption,
 .photoset figcaption,
 .tagContent ul,
 .results,
-.link .postContent blockquote,
 .link .postContent p,
 .link .postContent p .tumblr_blog a,
 .text .postContent p,
@@ -770,75 +944,102 @@ footer .legals,
 	padding-left:30px;
 	}
 
+code {
+	margin-left:-30px;
+	padding-left: 40px; 
+	}
 
 /* tumblr's new link styling, 17/04/13 */
-
-.text .postContent blockquote,
-.link_og_blockquote{
+.text .postContent blockquote{
 	margin-top: 7px;
 	margin-left: 30px;
 	padding-top: 5px;
 	padding-bottom:5px;
 	}
 
-/* Hang / Compensate */
-
-.hangout
-	{
-	padding:7px 4px 0 0;
-	font-size:1.7em;
-	margin-left:-0.5em	}
-
-
-.photo .postContent figure figcaption blockquote,
-.photoset .postContent figure figcaption blockquote,
-.text .postContent figure figcaption blockquote,
-.link .postContent figure figcaption blockquote,
-.video .postContent figure figcaption blockquote
-	{
-	}
-
-footer .postContent .pPrevious
-	{
-	text-indent:-1.58em;
+/* Hang  */
+.hangout {
+	padding: 7px 3px 0 0;
+	margin-left: -0.46em;
 	}
 
 
 
-.photo .postContent figure figcaption blockquote p:last-child{
-	padding: 0;
-}	
+/*-- BUTTONS  -----------------------------*/
 
-
-.lArrow{
-	padding:0 0.4em 0 0.6em;
+.btnNav{
+	border:solid #20531a;
+	border-width: 1px 1px 1px 0;
 	}
 
-.rArrow{
-	padding:0 0 0 0.4em ;
+.btnTask a{
+	border:solid #20531a;
+	border-width: 1px;
+	padding: 8px 10px 8px 11px;
+	}
+
+.btnTask a:hover{
+	background-color:#20531a;
+	color: white;
+	}
+
+.btnNav a{
+	padding: 8px 6px 25px 30px;
+	color: #20531a;
+	}
+
+.btnNav a:hover{
+	color: #fffff8;
+	background-color: #20531a;
 	}
 
 
-/*-- CONTENT -------------------------------*/
-/*------------------------------------------*/
-/*-- PREPEND -------------------------------*/
+
+.followBtn{
+	margin-top: 56px;
+	margin-left: 30px;
+	}
+
+.followBtn p a{
+	border:#20531a 1px solid;
+	padding: 8px 8px 8px 10px;
+	overflow: visible;
+	}
+
+.followBtn p a:hover {
+	background-color: #20531a;
+	color: white;
+	}
 
 
+.reblog_button{
+	margin-top:40px;
+	width:auto !important;
+	height:auto !important;
+	}
 
-/*
+.reblog_button:after {
+	content: 'REBLOG';
+	border:#20531a 1px solid;
+	padding: 8px 8px 8px 10px;
+	}
 
-.postLink
-	{
-	  	background: url('svg/triangle.svg');
-		background-color: red;
-	  	background-repeat: no-repeat;
-		background-position: -0.19em 1.8em;
-		-webkit-background-size: 0.75em 0.75em;
-   		-o-background-size: 0.75em 0.75em;
-   		-moz-background-size: 0.75em 0.75em;
-   		background-size:0.75em 0.75em;
-		}
-*/
+.reblog_button:hover:after {
+	background-color: #20531a;
+	color: white;
+	}
+
+.blend{
+	margin-left: 0.6em;
+	}
+
+.blendInfo {
+	font-size: 1.65em;
+	vertical-align: bottom;
+	padding: 0 0 30px 0;
+	margin: 0 6px 0 -6px;
+	}
+
 
 
 .postLink::before{
@@ -854,243 +1055,37 @@ footer .postContent .pPrevious
 	text-transform: none;
 	}
 
-
-
 .post .tagContent li::before{
 	content: "#";
 	padding: 0 0.15em 0 0;
 	}
 
 .quote .postContent figure figcaption::before{
-	content: "—";
+	content: "\2014";
 	margin-left: -1.3em;
 	font-size: 1em;
 	display: inline;
 	padding: 0 0.45em 0 0;
-	}
-
-/*-- DEVELOPMENT -----------------------------*/
-
-header .postContent,
-.text .postContent,
-.photo .postContent,
-.link .postContent,
-.audio .postContent,
-.video .postContent,
-.chat .postContent,
-.tagContent,
-.dateContent,
-.quote .postContent,
-.quote .dateContent,
-.quote .tagContent,
-footer .postContent
-	{
-	}
-
-/*--------------------------------------------*/
-
-.about,
-.blend
-	{
 	float: left;
-	width: 100%;
 	}
-	
-header .postContent{
-	border-right:none;
-	}
-
-.tagContent,
-.dateContent{
-	z-index: 3;
-	}
-
-.postContent{
-	z-index: -3;
-	}
-
-
-
-
-p, ul, ol, li {
- -moz-font-feature-settings:"onum" 1, "pnum" 1;
- -ms-font-feature-settings:*"onum" 1,*"pnum" 1;
- -o-font-feature-settings:*"onum" 1,*"pnum" 1;
- -webkit-font-feature-settings: "onum" 1, "pnum" 1;
- -font-feature-settings: "onum" 1, "pnum" 1;
-}
-
-
-.imgCap,
-.smallCaps,
-.legals,
-.pagination{
-	font-family: "Georgia Pro ";
-	font-style: normal;
-	font-weight: normal;
-	font-feature-settings: "smcp";
-	-moz-font-feature-settings: 'smcp=1';
-	-ms-font-feature-settings: "smcp";
-	-webkit-font-feature-settings: "smcp";
-	-o-font-feature-settings: "smcp";
-	}
-
-header .about p,
-header .blend p{
-	font-size: 0.65em;
-}
-
-
-header .about p,
-header .blend p,
-.legals{
-	font-family: "Georgia Pro";
-	font-style: normal;
-	font-weight: normal;
-	font-feature-settings: "smcp";
-	-moz-font-feature-settings: 'smcp=1';
-	-ms-font-feature-settings: "smcp";
-	-webkit-font-feature-settings: "smcp";
-	-o-font-feature-settings: "smcp";
-	letter-spacing: 0.2em;
-	text-transform: uppercase;
-	}
-
-
-/****
-header .tagContent li{
-	list-style: disc;
-	overflow: visible;
-	line-height: 2.8em;
-	display: none;
-}
-header .tagContent li::before
-	{
-	content: "∙ ";
-	float: left;
-	color:rgb(29, 99, 20);
-	font-size: 2em;
-	padding:0 0.9em 0 0 ;
-	margin:0 -0.7em 0 0 ;
-	}
-#searchTags{
-	background: none;
-	border: none;
-		border-bottom:1px solid rgb(29, 99, 20);
-	font-family:"Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-padding:0.25em 0 0;
-	color: rgb(29, 99, 20);
- 
-}
-**/
-
-
-
-#tumblr_controls{
-	visibility: hidden;
-}
-
-#tumblrreblog{
-	float: left;
-	margin-top: 6px;
-	border:1px solid rgb(29, 99, 20);
-	letter-spacing: 0.1em;
-	padding:6px 8px;
-}
-
-
-#tumblrreblog:hover
-{
-	background-color: rgb(29, 99, 20);
-	color: #fff;
-
-}
-
-
-#xpm0-hide {
-	display: none;
-}
-
-
-.about,
-.blend{
-	overflow: visible;
-}
-
-.blend{
-margin-left: 0.6em;
-}
-
-
-
-footer .legals .italic{
-	border-bottom: none;
-}
-
-
-
-/* SVG */
 
 @font-face {
 	font-family: 'rice';
-	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot');
+	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot') format('eot');
 	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot?#iefix') format('embedded-opentype'),
 		url('http://static.tumblr.com/wwbixja/nnFmnitxr/rice.woff') format('woff'),
 		url('http://static.tumblr.com/wwbixja/Ob3mnitym/rice.ttf') format('truetype'),
-		url('fonts/rice.svg#rice') format('svg');
-	font-weight: normal;
-	font-style: normal;
+		url('rice.svg#rice') format('svg');
+		font-weight: normal;
+		font-style: normal;
 	}
 
+	.riceIcons {
+		font-family: 'rice';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		}
 
-.riceIcons {
-	font-family: 'rice';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-}
-
-.blendInfo{
-	font-size:1.65em;
-	margin-left: -1em;
-	margin-top: -2em;
-	padding-right:7px;
-	vertical-align:bottom;
-}
-
-
-.audioCredits{
-	line-height: 1em;
-	padding-bottom: 1.6em;
-}
-
-
-#thisAudio{
-	margin: 1.2em 0 0 0;
-
-}
-
-
-.audio_player.white{
-	background-color: red;
-}
-
-
-.tumblr_audio_player .tumblr_audio_player_51415801954{
-	background-color: blue;
-}
-
-
-#audio_player_51415801954{
-	display: inline;
-}
-
-
-.tumblr_audio_player {
-}
-
-.mainContent .postContent img{
-	max-width: 100%;
-	}

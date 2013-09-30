@@ -1,7 +1,5 @@
 body
 	{
-	margin:0;
-	padding: 0;
 	font-size:106%;
 	}
 
@@ -10,18 +8,80 @@ html>body
 	font-size: 17px; 
 	}
 
+/*-----------------------------------------*/
+/*-- RESET --------------------------------*/
+/*-----------------------------------------*/
+
+.tagContent nav ul li,
+.postContent,
+.photo figcaption,
+.photoset figcaption,
+.chat .dateContent,
+.chat .postContent ul,
+.text .postContent blockquote,
+.chat .postContent b,
+.photo .postContent figure figcaption blockquote p:last-child,
+body,
+.dateContent p,
+header nav,
+.dateContent,
+.wrap,
+.results,
+.photo .dateContent,
+.text .postContent blockquote,
+.tagContent nav ul
+	{
+	padding:0;
+	}
+
+body,
+.results,
+.text img,
+.blend,
+.text, 
+.photo, 
+.chat, 
+.link, 
+.audio, 
+.video,
+.quote,
+.wrap,
+.blendInfo,
+.text .dateContent,
+.chat .dateContent, 
+.link .dateContent, 
+.audio .dateContent, 
+.video .dateContent, 
+.quote .dateContent,
+.photo .dateContent,
+.chat .postContent b,
+.text .postContent blockquote,
+.tagContent nav ul li,
+.tagContent nav ul{
+	margin: 0;
+	}
+
+.mainContent .chat .postContent ul,
+.photo .postContent figure figcaption blockquote,
+.photoset .postContent figure figcaption blockquote,
+.text .postContent figure figcaption blockquote,
+.link .postContent figure figcaption blockquote,
+.video .postContent figure figcaption blockquote
+	{
+	margin-left:0;
+	}
 
 /*-----------------------------------------*/
-/*-- HEADERS ------------------------------*/
+/*-- TYPE ------------------------------*/
 /*-----------------------------------------*/
-
 
 h1{
 	font-size: 3.6em;
 	line-height: 0.89em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
-	padding: 2.16em 0 0 0;
+	padding: 0.42em 0 0 0;
+	width:auto;
 	}
 
 h2 {
@@ -38,17 +98,42 @@ h3 {
 	letter-spacing:-0.04em;
 	}
 
-
 /*-----------------------------------------*/
 
+h1, 
+h2, 
+h3,
+blockquote,
+.link,
+.btnNav,
+.btnTask,
+.results p,
+.chat .postContent li,
+.text .postContent p,
+.link .postContent p,
+.audio .postContent p,
+.postContent li,
+.postLink a,
+.postContent figure figcaption,
+.quote .postContent figure blockquote,
+.quote .postContent figure blockquote figcaption p,
+.quote .postContent figure blockquote figcaption a
+	{
+	font-family: "Georgia Pro", Georgia, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	}
 
 
 /*-- POINT SIZE --------------------------*/
+footer small,
+.postContent .about p{
+	font-size:0.61em;
+	}
+
 
 .chat b,
-.postContent .about p,
 footer .postContent p,
-footer small,
 .dateContent p, 
 .dateContent time,
 .tagContent li{
@@ -59,6 +144,8 @@ header .tagContent li{
 	font-size:0.85em;
 	}	
 
+.hangout,
+.about,
 .postContent figure figcaption p,
 .postContent figure figcaption div,
 .quote .postContent figure figcaption,
@@ -77,140 +164,214 @@ p.link,
 	font-size:1.35rem;
 	}
 
-.dateContent{
-	display: block;
-	width: 100%;
+.btnNav a{
+	font-size: 2.5em;
 	}
 
-.dateContent p{
-	text-align: left;
-	float: left;
-	padding:0;
+ header .postContent .about p,
+.tagContent li,
+.postContent p,
+.postContent li,
+.postContent blockquote,
+.postContent blockquote p,
+.postContent figure figcaption,
+.postContent figure figcaption p, 
+.postContent figure figcaption div, 
+.copyright
+	{
+	line-height: 1.5em;
 	}
+
+
+.dateContent .reblog,
+.dateContent time,
+.dateContent p,
+.tagContent nav ul li:first-child{
+	text-align: left;
+	}
+
+.tagContent nav ul li:last-child{
+	text-align: right;
+	}
+
+.tagContent nav ul li{
+	text-align: center;
+	}	
+
+footer .postContent .pPrevious
+	{
+	text-indent:0em
+	}
+
+
+/*---------------------------*/
+
+footer .postContent p,
+footer .postContent a,
+footer .postContent a:link,
+footer .postContent a:visited,
+footer small,
+footer li,
+footer li a
+	{
+	color: #fffff9;
+	}
+
+.blogInfo p{
+	color: #fffff9;
+	}	
+
+.blogInfo{
+	background-color: #20531a;
+	}
+
+.tagContent nav ul{
+	background-color: blue;
+	}
+
+footer .postContent{
+	background-color: #20531a;
+	}	
+
+.mainContent .quote .tagContent{
+	background-color: red;
+	}
+
+.legals a:hover{
+	border-bottom:1px solid white;
+	}
+
+/*---------------------------*/
 
 header .dateContent,
-footer .dateContent{
-	display: none;
-	}
-
-header .postContent{
-	}
-
-.tagContent{
+footer .dateContent,
+.tagContent
+	{
 	display:none;
 	}
 
-header .tagContent{
-	display:block;
-	border-bottom: 1px solid rgb(29, 99, 20);
-}
-
-header nav {
-	padding:0;
-	}
-
+.postContent,
+.text .dateContent,
+.chat .dateContent, 
+.link .dateContent, 
+.audio .dateContent, 
+.video .dateContent, 
+.quote .dateContent,
+.photo .dateContent,
+.blend,
+.blendInfo,
+.btnReblog,
+.quote .postContent,
+.link .postContent,
+.audio .postContent,
+.text .postContent,
+.tagContent nav ul,
+.text, 
+.photo, 
+.chat, 
+.link, 
+.audio, 
+.video, 
+.quote,
+.text .postContent blockquote,
+header .tagContent,
+.about,
 .dateContent
 	{
-	padding:0;
+	display: block;
 	}
 
+.hangout,
+.dateContent .reblog,
+.tagContent nav ul li,
+.dateContent time,
+.blendWord,
+.blendNo{
+	display: inline;
+	}
+
+.dateContent time,
+.dateContent .reblog
+	{
+	clear: none;
+	}
+
+.tagContent nav ul li,
+.dateContent p,
+.dateContent time,
+.dateContent .reblog,
+.hangout,
+.blendInfo,
+.blendWord,
+.blendNo,
+.postInfo
+	{
+	float: left;
+	}
+
+.about,
+.blend
+	{
+	float: none;
+	}
+
+.results,
+.postContent,
+.dateContent,
+.video iframe, 
+.html_photoset, 
+.photo .postContent img,
+.text img,
+.tagContent,
+.tagContent nav ul{
+	width: 100%;
+	}	
+
+.photo figure figcaption, 
+.photoset figure figcaption,
+.video figure figcaption, 
+.quote figure figcaption {
+	max-width: 100%;
+	}
+
+.tagContent nav ul li{
+	width: 33.33%;
+	}
+
+
+
+/*---------------------------*/
+.postContent
+	{
+	border-bottom: 1px solid #20531a;
+	border-left: none;
+	border-right: none;
+	}
+
+header .tagContent
+	{
+	border-bottom: 1px solid #20531a;
+	}
+
+.text img, 
+.video iframe, 
+.html_photoset, 
+.photo .postContent img,
 header .postContent
 	{
 	border-left:none;
 	}
 
-.wrap,
-.photo .dateContent{
-	padding: 0;
-	margin: 0;
-	}	
-
-h1{
-	padding:0.42em 0 0 0
-	}
-
-
-.tagContent p{
-	padding-left:0;
-	}
-
-
-
-
-
-.about{
-	width: 100%;
-	font-size: 1em;
-	padding:7px 3px;
-	background-color: rgb(29, 99, 20);
-	display: block;
-
-}
-
-
-.text .postContent blockquote {
-	padding: 0;
-	margin: 0;
-	display: block;
-}
-
-.text, .photo, .chat, .link, .audio, .video, .quote {
-margin: 0;
-margin: 0;
-display: block;
-}
-
-.text .postContent ul, .text .postContent ol {
-padding: 0.1em 0 0;
-}
-
-.link .tagContent {
-padding:15px 0 15px 0;
-}
-
-.text img, .video iframe, .html_photoset, .photo .postContent img {
-border-left: none;
-width: 100%;
-}
-
-
-.dateContent time
-{
-float: left;
-display: inline;
-clear:none;
-text-align: left;
-}
-
-
-.dateContent .reblog {
-	padding-top: 0;
-	float: left;
-	display: inline;
-	clear: none;
-	text-align: left;
-}
-
 
 
 /*-- MARGIN -------------------------------*/
-
-/* Right padding */
-
-.post .photo{
-}
-
-.postContent{
-	padding:0;
-	}
 
 
 /* Left padding */
 
 h2,
 header .postContent h1,
-footer .postContent p,
-header .postContent .about p,
+header .about p,
 footer .legals,
 .dateContent time,
 .dateContent .reblog,
@@ -218,14 +379,16 @@ footer .legals,
 .tagContent nav,
 .tagContent nav ul li,
 .chat .postContent li,
-.chat .postContent b,
 .quote .postContent figure blockquote,
 .quote .postContent figure figcaption,
+.postContent figure figcaption blockquote,
 .photo figure figcaption,
 .link .postContent p,
-.link .postContent blockquote,
+.link .postContent ul,
+.link .postContent ol,
 .link .postContent p .tumblr_blog a,
 .chat .postContent p,
+.chat .postContent ul,
 .text .postContent p,
 .text .postContent ul, 
 .text .postContent ol,
@@ -233,241 +396,183 @@ footer .legals,
 .audio .postContent ul, 
 .audio .postContent ol,
 .video figcaption,
-.postContent figure figcaption blockquote,
 .about p,
-.results,
+.results p,
 .reblog,
+.followBtn,
+.btnNav a
+	{
+	padding-left:20px;
+	padding-right:20px;
+	}
+
+
 .blend{
-	padding-left:30px;
-	padding-right:30px;
+	padding-left: 20px;
+}
+
+.postContent blockquote {
+	padding-right:20px;
 	}
-
-.photo figcaption,
-.photoset figcaption{
-	padding: 0;
-	}
-
-
-/* tumblr's new link styling, 17/04/13 */
-
-.link_og_blockquote{
-	margin-left: 25px;
-	padding-top: 5px;
-	padding-bottom:5px;
-	}
-
-
-/* Hang / Compensate */
-
-.text img
-	{
-
-	}
-
-.photo .postContent figure figcaption blockquote,
-.photoset .postContent figure figcaption blockquote,
-.text .postContent figure figcaption blockquote,
-.link .postContent figure figcaption blockquote,
-.video .postContent figure figcaption blockquote
-	{
-	margin-left:0;
-	}
-
-footer .postContent .pPrevious
-	{
-	text-indent:0em
-	}
-
-.text .postContent blockquote	{
-	padding: 0;
-	margin:0;
-	}
-
-.photo .postContent figure figcaption blockquote p:last-child{
-	padding: 0;
-	}
-
-.lArrow{
-	padding:0 0.4em 0 0.6em;
-	}
-
-.rArrow{
-	padding:0 0 0 0.4em ;
-	}
-
 
 .quote figure blockquote {
 	padding-right: 30px;
-}
+	}
 
+.mainContent .postContent ul{
+	margin-left: 30px;
+	}
 
-.text img {
-	margin:0;
-	width: 100%;
-}
+.link_og_blockquote {
+	margin-left: 33px;
+	}	
 
-.tagContent{
-	width: 100%;
-	display: none;
-}
+.quote .postContent,
+.link .postContent,
+.audio .postContent,
+.text .postContent{
+	padding: 0 0 40px 0;
+	}
 
+.mainContent .chat .postContent,
+.mainContent .link .postContent,
+.mainContent .text .postContent,
+.mainContent .audio .postContent
+	{
+	margin-top: 10px;
+	}
 
+.postContent {
+	padding: 0 0 30px 0;
+	}
 
-.about p{
-	color: white;
-}
+.lArrow {
+	padding:0 0.4em 0 0.6em;
+	}
 
-footer .postContent{
-	background-color: rgb(29, 99, 20);
-}
-
-footer .postContent p,
-footer .postContent p a,
-footer small,
-footer li,
-footer li a
-{
-	color: white;
-
-}
+.rArrow {
+	padding:0 0 0 0.4em;
+	}
 
 .hangout {
-	padding: 0.1em 0 0 0;
-	font-size: 1.5em;
-	margin-left: -0.46em;
-	display: inline;
+	padding: 0.13em 0 0 0.1em;
+	margin-left: -0.56em;
+	font-size: 2em;
 	float: left;
 	}
 
-.quote .postContent figure blockquote
-	{
-	font-size: 1.7em;
-	line-height: 1.1em;
-	letter-spacing:0em;
-	margin-top: 0em;
-	font-style: normal;
-	font-weight: normal;
+.quote .postContent figure blockquote {
+	font-size: 1.8em;
+	line-height: 1.12em;
+	letter-spacing: -0.035em;
+	margin-top: 0.4em;
 	}
 
-
-.postContent{
-	padding: 0 0 30px 0;
-	display: block;
-	width: 100%;
-	border-bottom: 1px solid rgb(29, 99, 20);
-	border-left: none;
-	border-right: none;
-
-}
-
-
-.text .dateContent, 
+.text .dateContent,
+.chat .dateContent, 
 .link .dateContent, 
 .audio .dateContent, 
 .video .dateContent, 
-.quote .dateContent {
-padding:10px 0 20px 0;
-margin: 0;
-}
-
- 
-.photo .dateContent, 
-.photoset .dateContent {
-padding:5px 0;
-margin: 0;
-}
+.quote .dateContent,
+.photo .dateContent
+	{
+	padding:6px 0 15px 0;
+	}
 
 .photo figcaption, .photoset figcaption {
-padding-top: 0.25em;
-}
+	padding-top: 0.25em;
+	}
 
-.photo figure figcaption, .photoset figure figcaption, .video figure figcaption, .quote figure figcaption {
-max-width: 100%;
-}
+.dateContent .reblog {
+	padding-top: 0.1em;
+	}
 
 
+.text .postContent img {
+	margin: 1.3em 0 0em;
+	}
 
-.mainContent{
-margin:2em 0 0 0;
-}
+
+footer .postContent {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	}
+
+.postLink::before {
+	margin-left: -21px;
+	padding: 0 8px 0 0;
+	}
+
+.about{
+	padding: 0.5em 0 0.5em 0;
+	}
 
 .dateContent, .tagContent {
-min-height: 0px;
-}
-
-
-.tagContent nav{
-
-}
-
-.tagContent nav ul{
-	width: 100%;
-	display: block;
-	padding: 0;
-	margin: 0;
-	background-color: blue;
-}
-
-
-
-.tagContent nav ul li{
-	display:inline;
-	padding:0;
-	margin: 0;
-	float: left;
-	width: 33.33%;
-	text-align: center;
-}
-
-.tagContent nav ul li:first-child{
-	text-align: left;
-}
-
-.tagContent nav ul li:last-child{
-	text-align: right;
-}
-
-
-
-.link blockquote p,
- header .postContent .about p,
-.tagContent li,
-.text .postContent p, 
-.link .postContent p,
-.link .postContent blockquote,
-.text .postContent li,
-.postContent figure figcaption p, 
-.postContent figure figcaption div, 
-.quote .postContent figure figcaption,
-.copyright
-	{
-	line-height: 1.5em;
+	min-height: 0px;
 	}
 
+.results{
+	padding-top: 0.8em;
+	padding-bottom:2em;
+	}
 
+.postInfo{
+	padding-top: 0.5em;
+	}
 
-.blend {
-	margin:0;
-	padding-top:10px;
-	padding-bottom:10px;
+footer .legals{
 	width: 60%;
+	}
+
+.blend{
+	padding-top: 8px;
+	margin: 0;
 	float: left;
 	}
 
-.blendInfo{
-	margin: 0;
-	padding: 0 8px 0 0;
+.blendInfo {
+	padding: 0px 10px 8px 0;
 	vertical-align: top;
-	display: inline;
+	width: 16px;
+	display: none;
 	}
 
 .blendWord{
-	float: none;
-	display: inline;
+	padding:0px 0px 0 0; 
 	}
 
 .blendNo{
-	float: none;
-	display: inline;
+	padding:0;	
+	}
+
+.reblog_button {
+	margin: 12px 0 40px 0;
+	float:right;
+	}
+
+.followBtn{
+	float: right;
+	margin-top: 20px;
+	margin-left: 0;
+	margin-bottom: 40px;
+	}
+
+header .postContent {
+	margin-bottom: 0;
+	}
+.mainContent{
+	margin-top: 0;
+	}
+
+.postNumber{
+	float: left;
+	}
+
+.lArrow,
+.rArrow {
 	padding: 0;
-	}		
+	}
+
+figcaption small {
+	padding-bottom: 1em;
+}	

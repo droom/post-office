@@ -3,19 +3,14 @@
 
 body
 	{
-	margin-left: 2.5%;
-	margin-right: 5%;
-
+	margin-left: 12px;
+	margin-right: 0;
 	font-size:106%;
 	}
 
 html>body
 	{
 	font-size: 17px; 
-	}
-
-header .dateContent{
-	display:none;
 	}
 
 
@@ -27,6 +22,7 @@ footer .dateContent,
 .photo .dateContent,
 .photoset .dateContent,
 .audio .dateContent,
+.chat .dateContent,
 header .tagContent,
 footer .tagContent,
 .quote .tagContent,
@@ -34,29 +30,16 @@ footer .tagContent,
 .link .tagContent,
 .photo .tagContent,
 .photoset .tagContent,
-.audio .tagContent
+.audio .tagContent,
+.chat .tagContent
 	{
-	width:10%;
+	width:15%;
 	float:left;
 	text-align: left;
 	opacity: 1;
 	}
 
 
-header .postContent,
-footer .postContent,
-.quote .postContent,
-.text .postContent,
-.link .postContent,
-.photo .postContent,
-.photoset .postContent,
-.video .postContent,
-.audio .postContent{
-	float: right;
-	width: 85%;
-	display: inline;
-	}
-	
 
 .tagContent ul,
 .dateContent p, 
@@ -68,17 +51,30 @@ footer .postContent,
 	float: left;
 	}
 
+
+
+header .postContent,
+footer .postContent,
+.quote .postContent,
+.text .postContent,
+.link .postContent,
+.photo .postContent,
+.photoset .postContent,
+.video .postContent,
+.audio .postContent,
+.chat .postContent
+	{
+	float: right;
+	width: 83%;
+	display: inline;
+	}
+	
+
+
 header .tagContent nav ul,
 .tagContent ul{
 	padding-left:0;
 	}
-
-ul.tags{
-	text-indent: -0.45rem;
-	}
-
-
-
 
 header .tagContent li{
 	display: block;
@@ -91,51 +87,10 @@ header .tagContent li{
 	margin-left: -0.45em;
 	}
 
-/* Left padding */
 
-h2,
-header .postContent h1,
-header .postContent .about p,
-footer .postContent p,
-footer .legals,
-.chat .postContent li,
-.chat .postContent b,
-.quote .postContent figure blockquote,
-.quote .postContent figure figcaption,
-.video figcaption,
-.photo figcaption,
-.photoset figcaption,
-.results,
-.link .postContent blockquote,
-.link .postContent p,
-.link .postContent p .tumblr_blog a,
-.text .postContent p,
-.chat .postContent p
-	{
-	padding-left:30px;
-	}
-
-/* tumblr's new link styling, 17/04/13 */
-
-.link_og_blockquote{
-	margin-left: 20px;
-	}
-
-
-/* TAG CONTENT */
-
-.link .tagContent,
-.chat .tagContent,
-.photo .tagContent,
-.photoset .tagContent,
-.text .tagContent,
-.quote .tagContent
-	{
-	padding-top:0;
-	}
-
-.postContent{
-	border-right:none;	
+.blend,
+.blendInfo {
+	margin:0;
 	}
 
 header .about p,
@@ -144,39 +99,88 @@ header .about p,
 	}
 
 
+/* Left padding */
 
-.text ul.tags {
-padding: 1.6em 0 0 0;
+h2,
+header .postContent h1,
+header .postContent .about p,
+footer .legals,
+.postContent ol,
+.chat .postContent li,
+.quote .postContent figure blockquote,
+.quote .postContent figure figcaption,
+.mainContent .chat .postContent ul,
+.mainContent .chat .postContent ol,
+.video figcaption,
+.photo figcaption,
+.photoset figcaption,
+.link .postContent p,
+.link .postContent ul,
+.link .postContent p .tumblr_blog a,
+.text .postContent p,
+.chat .postContent p,
+.audio .postContent p,
+.video .postContent p
+	{
+	padding-left:30px;
+	padding-right:50px;
 	}
 
+.link .postContent blockquote{
+	padding-right:30px;
+	}
+
+.mainContent .postContent ul,
+.mainContent .postContent ol {
+	padding-left: 3.65em;
+	}
+
+
+/* TAG CONTENT */
+.link .tagContent,
+.chat .tagContent,
+.photo .tagContent,
+.photoset .tagContent,
+.text .tagContent,
+.quote .tagContent,
+.audio .tagContent
+	{
+	padding-top:0;
+	}
+
+.postContent{
+	border-right:none;	
+	}
 
 header .about p{
 	word-wrap:break-word;	
-}
-
-
-.blend {
-	margin:0;
 	}
 
 .blendInfo{
-	margin: 0;
-	padding: 0 0 4px 0;
+	padding: 0 6px 4px 0;
 	vertical-align: top;
 	display: block;
 	}
 
-.blendWord{
-	float: left;
-	display: block;
-	display: none;
-
+header .dateContent,
+.blendNo,
+.copyLong
+	{
+	display:none;
 	}
 
-.blendNo{
-	float: left;
-	display: block;
-	padding: 0 0 0 0.12em;
-	display: none;
-	
+.reblog,
+ul.tags
+	{
+	padding: 0.85em 0 0 0;
 	}
+
+.followBtn {
+	margin-left: 0px;
+	margin-top: 56px;
+	}
+
+.results{
+	margin-left:17%;
+	}
+
