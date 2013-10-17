@@ -52,6 +52,7 @@ table {
 body
 	{
 	background:#fffff9;	
+	background:#f8f7f3;
 	margin:0 1.4%;
 	font-size:106%;
 	text-rendering: optimizeLegibility;
@@ -131,7 +132,7 @@ code,
 
 /*-- LIGATURES, SMALL-CAPS -----------------------*/
 
-h1, h2, p, li, figcaption{
+h1, h2, p, li, figcaption, .smallcaps{
 	-moz-font-feature-settings:"liga=1, dlig=1"; 
 	-moz-font-feature-settings:"liga", "dlig"; 
     -ms-font-feature-settings:"liga", "dlig"; 
@@ -164,23 +165,25 @@ header .blend p,
 
 /*-- POINT SIZE --------------------------*/
 
-header .about p,
-header .blend p,
-header .followBtn p{
-	font-size: 0.65em;
-	}
+
 
 small,
 .imgCap{
 	font-size: 0.5em;
 	}
 
+header .about p,
+header .blend p,
+header .followBtn p,
 .chat b,
-footer .postContent p,
 .dateContent p, 
 .dateContent time,
 .tagContent li{
 	font-size:0.65em;
+	}
+
+.smallcaps{
+	font-size:0.5em;
 	}
 
 code {
@@ -285,7 +288,8 @@ footer small
 .about p,
 .blend p,
 header .tagContent li,
-header .followBtn p
+header .followBtn p,
+.smallCaps
 	{
 	letter-spacing:0.175em;
 	}
@@ -307,15 +311,8 @@ header .blend p,
 	letter-spacing: 0;
 	}
 
-.h1_1 { margin-right: -0.01em }  /* R */
-.h1_2 { margin-right: -0.03em }  /* i */
-.h1_3 { margin-right: 0.01em  }  /* c */
-.h1_4 { margin-right: -0.13em }  /* e */
-.h1_5 { margin-left: 0.05em; font-size:0.9em; vertical-align: center; }  /* + */
-.h1_6 { margin-right: -0.01em }  /* S */
-.h1_7 { margin-right: 0em  }  /* a */
-.h1_8 { margin-right: -0.02em }  /* l */
-.h1_9 { margin-right: 0.02em  }  /* t */
+
+
 
 
 /*-- Formating ----------------------------*/
@@ -445,6 +442,8 @@ footer .btnNav a:link{
 	border-bottom: none;
 	}
 
+
+h1 a:hover,
 a:hover,
 time a:hover,
 .tags a:hover,
@@ -456,6 +455,11 @@ time a:hover,
 	color: #131bb4;
 	border-bottom:1px solid #131bb4;
 	}
+
+.logo svg:hover{
+	color: red;
+	 fill: #fce57e;
+}
 
 .resultTag:hover{
 	text-decoration:line-through;
@@ -489,7 +493,8 @@ time a:hover,
 .postContent code,
 .photo .postContent img,
 .flexslider,
-.tumblr_audio_player{
+.tumblr_audio_player,
+.html_photoset{
 	border-left:solid 7px #20531a;
 	}
 
@@ -671,12 +676,14 @@ footer .legals,
 	}
 
 .reblog_button svg,
-#xpm0-hide {
-	display:none;
-	}
-
-#tumblr_controls{
+#dashboard_iframe,
+#xpm0-hide,
+#iframe_controls,
+.version_pill,
+.controls_pill,
+#tumblr_controls {
 	visibility: hidden;
+	display: none !important;
 	}
 
 /*-- OVERFLOW -----------------------------*/
@@ -710,10 +717,9 @@ footer .legals,
 .quote .dateContent,
 .chat .dateContent
 	{
-	padding:1em 0 0;
+	padding:0.95em 0 0;
 	}
 
-.link .tagContent,
 .photo .tagContent,
 .photoset .tagContent,
 .quote .tagContent,
@@ -723,8 +729,12 @@ footer .legals,
 	padding:1.1em 0 0;
 	}
 
+.link .tagContent{
+	padding:3.85em 0 0;
+	}
+
 .text .tagContent {
-	padding:4.4em 0 0
+	padding:4.4em 0 0;
 	}
 
 .chat .tagContent {
@@ -762,8 +772,8 @@ footer .legals,
 
 footer .postContent
 	{
-	padding-top:1.55em;
-	padding-bottom: 2.5em;
+	padding-top:2em;
+	padding-bottom: 1.5em;
 	}
 
 .dateContent p,
@@ -773,12 +783,11 @@ footer .postContent
 	}
 
 footer .legals{
-	margin-top: 5em;
+	margin-top: 9em;
 	}
 
 .text,
 .photo,
-.photoset,
 .chat,
 .link,
 .audio,
@@ -917,7 +926,7 @@ figcaption small{
 /*-- GUTTERS -------------------------------*/
 
 .postContent{
-	padding:0 30px 3px 0;
+	padding:0 30px 0 0;
 	}
 
 h2,
@@ -959,10 +968,9 @@ code {
 
 /* Hang  */
 .hangout {
-	padding: 7px 3px 0 0;
-	margin-left: -0.46em;
-	}
-
+	padding: 7px 0px 0 0;
+	margin-left: -0.44em;
+}
 
 
 /*-- BUTTONS  -----------------------------*/
@@ -984,7 +992,7 @@ code {
 	}
 
 .btnNav a{
-	padding: 8px 6px 25px 30px;
+	padding: 0 6px 25px 30px;
 	color: #20531a;
 	}
 
@@ -1080,6 +1088,18 @@ code {
 		font-style: normal;
 	}
 
+@font-face {
+	font-family: 'logoRice';
+	src:url('http://droom.name/domains/droom.name/html/rice/riceLogo.eot') format('eot');
+	src:url('http://droom.name/domains/droom.name/html/rice/riceLogo.eot#iefix') format('embedded-opentype'),
+		url('http://droom.name/domains/droom.name/html/rice/riceLogo.woff') format('woff'),
+		url('http://droom.name/domains/droom.name/html/rice/riceLogo.ttf') format('truetype'),
+		url('riceLogo.svg#riceLogo') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+
 	.riceIcons {
 		font-family: 'rice';
 		speak: none;
@@ -1089,3 +1109,81 @@ code {
 		text-transform: none;
 		}
 
+
+	.riceLogo {
+		font-family: 'logoRice';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		}
+		
+
+.quoteDouble{
+	display: inline;	
+	}
+
+.quoteSingle{
+	display: none;
+	}
+
+
+
+.h1_1 { margin-right: -0.01em }  /* R */
+.h1_2 { margin-right: -0.03em }  /* i */
+.h1_3 { margin-right: 0.01em  }  /* c */
+.h1_4 { margin-right: -0.13em }  /* e */
+.h1_5 { margin-left: 0.05em; font-size:0.9em; vertical-align: center; }  /* + */
+.h1_6 { margin-right: -0.01em }  /* S */
+.h1_7 { margin-right: 0em  }     /* a */
+.h1_8 { margin-right: -0.02em }  /* l */
+.h1_9 { margin-right: 0.02em  }  /* t */
+
+#riceLogo{
+	fill:#20531a;	
+	margin-left:30px;
+	margin-top: 135px;
+	}
+#riceLogo:hover{
+	fill:blue;
+	}
+
+
+
+header .postContent a:link{
+border-bottom: none;
+text-decoration: none;
+
+}
+
+
+
+.photoset .photoset_row {
+width: 500px;
+white-space: nowrap;
+overflow: hidden;
+margin-top: 0px !important;
+}
+
+.photoset_row{
+	background-color: blue;
+
+}
+
+#player,
+.audio .postContent .audio_player_container.has_art, 
+.audio .postContent .audio_player_container, 
+.audio .postContent .audio_player_container .audio_player,
+.audio_player_container.no_border .audio_player,
+.audio_player.overlay_toggle .audio_player_overlay, 
+.audio_player.inactive .audio_player_overlay{
+	background-color: blue !important;
+	color: green !important;
+
+}
+
+.audio_player .audio_message_container {
+font-weight: bold;
+font-size: 15px;
+font-family: georgia;
