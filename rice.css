@@ -61,6 +61,14 @@ html>body
 	}
 
 
+h1, h2, h3, h4, h5, h6, p, small{
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    	text-rendering: optimizeLegibility;
+
+}
+
 
 /*
 
@@ -107,11 +115,9 @@ blockquote,
 .quote .postContent figure blockquote,
 .quote .postContent figure blockquote figcaption p,
 .quote .postContent figure blockquote figcaption a {
-	font-family:"Georgia Pro", sans-serif;
+	font-family:"Georgia Pro", Georgia, "Times New Roman", serif;
 	font-style:normal;
 	font-weight:normal;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
 	}
 
 p em,
@@ -123,16 +129,14 @@ p em,
 .link .postContent blockquote,
 .text .postContent blockquote,
 .text .postContent blockquote p {
-  font-family: "Georgia Pro";
+  font-family:"Georgia Pro", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
-  		text-rendering: optimizeLegibility;
-  		-webkit-font-smoothing: antialiased;  
 }	
 
 strong
 	{
-	font-family:Georgia, sans-serif;
+	font-family:Georgia, serif;
 	font-weight:800;
 	}
 
@@ -160,7 +164,7 @@ code,
 .tagContent li,
 .chat .postContent b
 	{
-	font-family: 'Inconsolata', serif;
+	font-family: 'Inconsolata', monospace;
 	}	
 	
 /* GLYPH */
@@ -171,7 +175,7 @@ code,
 
 /*-- LIGATURES --*/
 
-h1, h2, p, li, figcaption{
+h1, h2, p, li, figcaption, blockquote{
 	-moz-font-feature-settings:"liga=1, dlig=1"; 
 	-moz-font-feature-settings:"liga", "dlig"; 
     -ms-font-feature-settings:"liga", "dlig"; 
@@ -219,7 +223,7 @@ header .blendNo{
 	}
 
 header .postInfo .postNumber{
-	font-size: 0.7em;
+	font-size: 0.75em;
 	}
 
 header .blendNumber{
@@ -306,7 +310,11 @@ figcaption small {
 	line-height:1.4em;
 	}
 
-.link_og_blockquote,
+
+
+.photo .postContent blockquote,
+.text .postContent blockquote,
+.link .postContent blockquote,
 .postContent li,
 code {
 	line-height: 1.5em;
@@ -463,17 +471,18 @@ time,
 	}
 
 /*-- SELECT -----------------------------*/
-
 header,
 .blend,
 .dateContent,
 .tagContent{
+	/*
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	*/
 	}
 
 /*-- LINKS  -------------------------------*/
@@ -551,22 +560,27 @@ header .postContent a:link{
 .html_photoset{
 	border-left:solid 7px #184b12;
 	}
+
 .photo .postContent figure a {
 	border: none;
 	}
+
 .quote .postContent	{	
 	border-left:none;
+	padding-left: 1px; /* accomodate for border absence */
 	}
+
 header .postContent {
 	border-right:none;
 	}
 
+
 h1 {
-	font-size: 4.5em;
-	line-height: 0.875em;
+	font-size: 4.2em;
+	line-height: 0.885em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
-	padding: 1.7em 0 0 0;
+	margin-top: 1.55em;
 	width: inherit;
 	}
 
@@ -610,6 +624,7 @@ footer,
 	width:100%;
 	}
 
+
 .postContent
 	{
 	width:62%;
@@ -618,6 +633,22 @@ footer,
 .results{
 	width:55.3%;	
 	}
+
+.audio .postContent h2,
+.text .postContent h2,
+.link .postContent h2,
+.audio .postContent p,
+.text .postContent p,
+.link .postContent p,
+.quote .postContent figure figcaption,
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div{
+	width:92.5%;
+	}
+
+
 
 .dateContent{
 	width:15%;
@@ -864,11 +895,7 @@ header .postContent{
 	}
 
 header nav{
-	padding-top:15px
-	}
-
-figcaption small{
-	padding-top:0.5rem;
+	padding-top:15px;
 	}
 
 .mainContent .postContent ul{
@@ -920,8 +947,7 @@ figcaption small{
 
 .mainContent .quote .postContent figcaption,
 .mainContent .quote .postContent figcaption p,
-.photo .postContent figure a,
-.postContent figure figcaption blockquote {
+.photo .postContent figure a{
 	margin:0;
 	}
 
@@ -945,17 +971,8 @@ figcaption small{
 	padding-bottom: 1.3em;
 	}
 
-.link_og_blockquote{
-	margin-top: 10px;
-	margin-left:46px;
-	margin-right: 30px;
-	}
 
-.link_og_blockquote{
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-left: 20px;
-	}
+
 
 .mainContent .postContent ul{
 	padding-right: 30px;
@@ -990,11 +1007,9 @@ footer .legals,
 .quote .postContent figure blockquote,
 .quote .postContent figure figcaption,
 .quote .postContent blockquote,
-.postContent figure figcaption blockquote,
-.video figcaption,
-.photo figcaption,
-.photoset figcaption,
 .results,
+.fig,
+.photo .postContent p,
 .link .postContent p,
 .link .postContent p .tumblr_blog a,
 .text .postContent p,
@@ -1161,41 +1176,8 @@ header .blogInfo{
 	float: left;
 	}
 
-/* EXTERNAL */
-@font-face {
-	font-family: 'rice';
-	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot') format('eot');
-	src:url('http://static.tumblr.com/wwbixja/iaFmnitw1/rice.eot?#iefix') format('embedded-opentype'),
-		url('http://static.tumblr.com/wwbixja/nnFmnitxr/rice.woff') format('woff'),
-		url('http://static.tumblr.com/wwbixja/Ob3mnitym/rice.ttf') format('truetype'),
-		url('rice.svg#rice') format('svg');
-		font-weight: normal;
-		font-style: normal;
-		}
-
-	.riceIcons {
-		font-family: 'rice';
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		}
 
 
-.audio .postContent h2,
-.text .postContent h2,
-.link .postContent h2,
-.audio .postContent p,
-.text .postContent p,
-.link .postContent p,
-.quote .postContent figure figcaption,
-.photo .postContent figure figcaption p, 
-.photo .postContent figure figcaption div, 
-.video .postContent figure figcaption p, 
-.video .postContent figure figcaption div{
-	width:92.5%;
-	}
 
 .reblogBtn,
 .followBtn,
@@ -1203,7 +1185,6 @@ header .blogInfo{
 .postInfo{
 	padding-left: 20px;
 	}
-
 
 
 .photo .postContent figcaption blockquote{
@@ -1226,3 +1207,75 @@ header .blogInfo{
 }
 
 */
+
+
+
+/* BLOCKQUOTES */
+
+
+.photo .postContent blockquote,
+.text .postContent blockquote,
+.link .postContent blockquote
+	{
+	margin-top: 10px;
+	margin-left:56px;
+	margin-right: 30px;
+	padding-bottom: 4px;
+	padding-left: 20px;
+	}
+
+.photo .postContent blockquote blockquote,
+.text .postContent blockquote blockquote,
+.link .postContent blockquote blockquote
+	{
+	margin-top: 0px;
+	margin-left: 5px;
+	margin-right: 30px;
+	padding-bottom: 4px;
+	padding-left: 22px;
+	}
+
+
+
+/* EXTERNAL */
+@font-face {
+	font-family: 'rice';
+	src:url('../font/rice.eot') format('eot');
+	src:url('../font/rice.eot?#iefix') format('embedded-opentype'),
+		url('../font/rice.woff') format('woff'),
+		url('../font/rice.ttf') format('truetype'),
+		url('../rice.svg#rice') format('svg');
+		font-weight: normal;
+		font-style: normal;
+		}
+
+	.riceIcons {
+		font-family: 'rice';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		}
+
+.c1{
+	margin-left:-0.04em
+	}
+
+.c2{
+	margin-left: -0.037em;
+	margin-right: 0.004em;
+	}
+
+.c5{
+	margin-left: -0.07em;
+	}
+
+.c9{
+	margin-left:-0.025em;
+	margin-right: 0.005em;
+	}
+
+.fig{
+	padding-top: 0.5em;
+	}

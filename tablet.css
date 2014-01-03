@@ -3,9 +3,10 @@
 
 body
 	{
-	margin-left: 12px;
+	margin-left: 16px;
 	margin-right: 0;
 	font-size:106%;
+	padding: 0;
 	}
 
 html>body
@@ -33,7 +34,7 @@ footer .tagContent,
 .audio .tagContent,
 .chat .tagContent
 	{
-	width:15%;
+	width:14%;
 	float:left;
 	text-align: left;
 	opacity: 1;
@@ -87,13 +88,16 @@ header .tagContent li{
 	margin-left: -0.45em;
 	}
 
+/* RESET */
 
-.blend,
-.blendInfo {
-	margin:0;
-	}
+header .blendNumber,
+header .blend {
+	margin: 0;
+}
 
-header .about p,
+.reblogBtn,
+.postInfo,
+.followBtn,
 .postContent {
 	padding: 0px;
 	}
@@ -101,9 +105,12 @@ header .about p,
 
 /* Left padding */
 
+header .tagContent{
+	padding-left: 0;
+	}
+
 h2,
 header .postContent h1,
-header .postContent .about p,
 footer .legals,
 .postContent ol,
 .chat .postContent li,
@@ -111,9 +118,6 @@ footer .legals,
 .quote .postContent figure figcaption,
 .mainContent .chat .postContent ul,
 .mainContent .chat .postContent ol,
-.video figcaption,
-.photo figcaption,
-.photoset figcaption,
 .link .postContent p,
 .link .postContent ul,
 .link .postContent p .tumblr_blog a,
@@ -122,8 +126,6 @@ footer .legals,
 .audio .postContent p,
 .video .postContent p
 	{
-	padding-left:30px;
-	padding-right:50px;
 	}
 
 .link .postContent blockquote{
@@ -134,6 +136,10 @@ footer .legals,
 .mainContent .postContent ol {
 	padding-left: 3.65em;
 	}
+
+.text, .photo, .chat, .link, .audio, .video {
+margin: 0 0 5em 0;
+}
 
 
 /* TAG CONTENT */
@@ -152,18 +158,12 @@ footer .legals,
 	border-right:none;	
 	}
 
-header .about p{
-	word-wrap:break-word;	
-	}
 
 .blendInfo{
-	padding: 0 6px 4px 0;
-	vertical-align: top;
-	display: block;
+	display: none;
 	}
 
 header .dateContent,
-.blendNo,
 .copyLong
 	{
 	display:none;
@@ -184,3 +184,50 @@ ul.tags
 	margin-left:17%;
 	}
 
+
+.quoteDouble{
+	display: inline;	
+	}
+
+.quoteSingle{
+	display: none;
+	}
+
+
+.audio .postContent p, 
+.text .postContent p, 
+.link .postContent p, 
+.quote .postContent figure figcaption, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div {
+	width:auto;
+}
+
+
+
+.wrap{
+	display: block;
+}
+
+
+header .postContent{
+	display:block;
+}
+
+
+.numberSlash{
+	display: block;
+}	
+
+.blendNumber:before,
+.numberSlash:before{
+	content: '—';
+}
+
+
+
+.blendNumber{
+	display: block;
+}

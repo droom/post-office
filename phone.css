@@ -12,7 +12,9 @@ html>body
 /*-- RESET --------------------------------*/
 /*-----------------------------------------*/
 
+header .blogInfo,
 .tagContent nav ul li,
+header .tagContent,
 .postContent,
 .photo figcaption,
 .photoset figcaption,
@@ -26,10 +28,12 @@ body,
 header nav,
 .dateContent,
 .wrap,
+.fig,
 .results,
 .photo .dateContent,
 .text .postContent blockquote,
-.tagContent nav ul
+.tagContent nav ul,
+.photo .postContent figure figcaption p
 	{
 	padding:0;
 	}
@@ -80,7 +84,7 @@ h1{
 	line-height: 0.89em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
-	padding: 0.42em 0 0 0;
+	margin: 0.42em 0 0 0;
 	width:auto;
 	}
 
@@ -126,11 +130,11 @@ blockquote,
 
 
 /*-- POINT SIZE --------------------------*/
-footer small,
-.postContent .about p{
-	font-size:0.61em;
-	}
 
+
+header .blogInfo p{
+	font-size:0.8em;
+	}
 
 .chat b,
 footer .postContent p,
@@ -145,18 +149,17 @@ header .tagContent li{
 	}	
 
 .hangout,
-.about,
-.postContent figure figcaption p,
-.postContent figure figcaption div,
-.quote .postContent figure figcaption,
+.audio .postContent p,
+.link_og_blockquote,
+.quote .postContent p,
 .text .postContent p,
 .text .postContent li,
-.post .link blockquote p,
-p.link,
-.postLink a,
+.link .postContent p,
+.photo .postContent p,
+.quote .postContent figcaption,
 .results p
 	{
-	font-size:1em;
+	font-size:1rem;
 	}
 
 .chat .postContent li
@@ -179,7 +182,7 @@ p.link,
 .postContent figure figcaption div, 
 .copyright
 	{
-	line-height: 1.5em;
+	line-height: 1.45em;
 	}
 
 
@@ -230,7 +233,7 @@ footer li a
 	}
 
 footer .postContent{
-	background-color: #20531a;
+	background-color: #184b12;;
 	}	
 
 .mainContent .quote .tagContent{
@@ -284,9 +287,7 @@ header .tagContent,
 .hangout,
 .dateContent .reblog,
 .tagContent nav ul li,
-.dateContent time,
-.blendWord,
-.blendNo{
+.dateContent time{
 	display: inline;
 	}
 
@@ -301,9 +302,6 @@ header .tagContent,
 .dateContent time,
 .dateContent .reblog,
 .hangout,
-.blendInfo,
-.blendWord,
-.blendNo,
 .postInfo
 	{
 	float: left;
@@ -382,6 +380,10 @@ footer .legals,
 .quote .postContent figure blockquote,
 .quote .postContent figure figcaption,
 .postContent figure figcaption blockquote,
+.photo .postContent figure figcaption blockquote div,
+.photo .postContent figure figcaption blockquote p,
+.photo .postContent figure figcaption div,
+.postContent blockquote div,
 .photo figure figcaption,
 .link .postContent p,
 .link .postContent ul,
@@ -398,7 +400,7 @@ footer .legals,
 .video figcaption,
 .about p,
 .results p,
-.reblog,
+.reblog_button,
 .followBtn,
 .btnNav a
 	{
@@ -409,7 +411,7 @@ footer .legals,
 
 .blend{
 	padding-left: 20px;
-}
+	}
 
 .postContent blockquote {
 	padding-right:20px;
@@ -424,14 +426,15 @@ footer .legals,
 	}
 
 .link_og_blockquote {
+	margin-top: 6px;
 	margin-left: 33px;
-	}	
+	}
 
 .quote .postContent,
 .link .postContent,
 .audio .postContent,
 .text .postContent{
-	padding: 0 0 40px 0;
+	padding: 0 0 30px 0;
 	}
 
 .mainContent .chat .postContent,
@@ -455,11 +458,20 @@ footer .legals,
 	}
 
 .hangout {
-	padding: 0.13em 0 0 0.1em;
-	margin-left: -0.56em;
-	font-size: 2em;
+	padding: 0.1em 0 0 0.1em;
+	margin-left: -0.37em;
+	font-size: 1.8em;
 	float: left;
 	}
+
+.quoteDouble{
+	display:none;
+	}
+
+.quoteSingle{
+	display:inline;
+	}
+
 
 .quote .postContent figure blockquote {
 	font-size: 1.8em;
@@ -483,6 +495,12 @@ footer .legals,
 	padding-top: 0.25em;
 	}
 
+
+header .about p{
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
 .dateContent .reblog {
 	padding-top: 0.1em;
 	}
@@ -494,7 +512,7 @@ footer .legals,
 
 
 footer .postContent {
-	padding-top: 0.5em;
+	padding-top: 1.3em;
 	padding-bottom: 1em;
 	}
 
@@ -504,7 +522,7 @@ footer .postContent {
 	}
 
 .about{
-	padding: 0.5em 0 0.5em 0;
+	padding:0;
 	}
 
 .dateContent, .tagContent {
@@ -516,40 +534,18 @@ footer .postContent {
 	padding-bottom:2em;
 	}
 
-.postInfo{
-	padding-top: 0.5em;
-	}
-
 footer .legals{
 	width: 60%;
 	}
-
 .blend{
-	padding-top: 8px;
-	margin: 0;
 	float: left;
 	}
 
 .blendInfo {
-	padding: 0px 10px 8px 0;
-	vertical-align: top;
-	width: 16px;
 	display: none;
 	}
 
-.blendWord{
-	padding:0px 0px 0 0; 
-	}
-
-.blendNo{
-	padding:0;	
-	}
-
-.reblog_button {
-	margin: 12px 0 40px 0;
-	float:right;
-	}
-
+.reblog_button,
 .followBtn{
 	float: right;
 	margin-top: 20px;
@@ -561,11 +557,7 @@ header .postContent {
 	margin-bottom: 0;
 	}
 .mainContent{
-	margin-top: 0;
-	}
-
-.postNumber{
-	float: left;
+	margin:0;
 	}
 
 .lArrow,
@@ -573,6 +565,93 @@ header .postContent {
 	padding: 0;
 	}
 
-figcaption small {
-	padding-bottom: 1em;
-}	
+.mainContent .postContent p, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div,
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div{
+	padding-top: 0.8em;
+	}
+
+
+/* IN DEVELOPMENT */
+
+.postInfo{
+	float:left;
+	}
+
+.logo{
+	padding-left: 20px;
+	margin-top: 30px;
+	width: 138px;
+	height: 98px;
+	}
+
+header .postContent {
+	padding: 0 0 20px 0;
+	}
+
+header .blogInfo p{
+	font-size: 0.68em;
+		letter-spacing: 0.2em;
+		padding-top: 0.5em;
+
+}
+
+footer .legals .italic{
+	font-size: 0.8em;
+	}
+
+.logomark{
+	margin-top: 35px;
+	margin-left:15px;
+	width:162px;
+	height:108px;
+	}
+
+header .blogInfo .italic{
+	font-size: 0.8em;
+	}
+
+
+
+.audio .postContent p, 
+.text .postContent p, 
+.link .postContent p, 
+.quote .postContent figure figcaption, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div {
+	width: auto;
+}
+
+.photo .postContent figure figcaption blockquote{
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.link .postContent blockquote{
+padding: 0;
+margin-left: 20px;
+margin-right: 0;
+	}
+
+
+.blogInfo .italic {
+	padding-right: 0.25em;
+	padding-left: 0.12em;
+	letter-spacing: 0.15em;
+}
+
+
+.fig{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	}
+
+header .postContent h1{
+	margin-left: -0.06em;
+	}
+
+	
