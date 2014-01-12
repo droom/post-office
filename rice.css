@@ -61,7 +61,7 @@ html>body
 	}
 
 
-h1, h2, h3, h4, h5, h6, p, small{
+h1, h2, h3, h4, h5, h6, p, b, small, blockquote, figcaption, li, time{
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -69,24 +69,6 @@ h1, h2, h3, h4, h5, h6, p, small{
 
 }
 
-
-/*
-
-body
-	{
-	background:#f8f7f3;
-	margin:0 1.4%;
-	font-size:100%;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	}
-
-
-html>body
-	{
-	font-size: 16px; 
-	}
-*/
 /*-----------------------------------------*/
 /*-- TYPOGRAPHY ---------------------------*/
 /*-----------------------------------------*/
@@ -132,7 +114,38 @@ p em,
   font-family:"Georgia Pro", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-weight: normal;
+
+	-moz-font-feature-settings:"onum" 1, "pnum" 1;
+	-ms-font-feature-settings:*"onum" 1,*"pnum" 1;
+	-o-font-feature-settings:*"onum" 1,*"pnum" 1;
+	-webkit-font-feature-settings: "onum" 1, "pnum" 1;
+	-font-feature-settings: "onum" 1, "pnum" 1;
+
+	-moz-font-feature-settings:"lnum" 0, "lnum" 0;
+	-ms-font-feature-settings:*"lnum" 0,*"lnum" 0;
+	-o-font-feature-settings:*"lnum" 0,*"lnum" 0;
+	-webkit-font-feature-settings: "lnum" 0, "lnum" 0;
+	-font-feature-settings: "lnum" 0, "lnum" 0;
+
 }	
+
+/*-- NUMERALS --*/
+
+
+.postContent h2,
+.postContent p,
+.postContent em,
+.postContent blockquote div,
+.link_og_blockquote
+.postNumber,
+.blendNumber{
+	-moz-font-feature-settings:"onum" 1, "pnum" 1;
+	-ms-font-feature-settings:*"onum" 1,*"pnum" 1;
+	-o-font-feature-settings:*"onum" 1,*"pnum" 1;
+	-webkit-font-feature-settings: "onum" 1, "pnum" 1;
+	-font-feature-settings: "onum" 1, "pnum" 1;
+	}
+
 
 strong
 	{
@@ -153,6 +166,9 @@ header .blend p,
 	font-style: normal;
 	font-weight: normal;
 	text-transform: lowercase;
+
+
+
 	}
 
 
@@ -184,18 +200,6 @@ h1, h2, p, li, figcaption, blockquote{
     font-feature-settings:"liga", "dlig";
 	}
 
-/*-- NUMERALS --*/
-
-.postContent h2,
-.postContent p,
-.postNumber,
-.blendNumber{
-	-moz-font-feature-settings:"onum" 1, "pnum" 1;
-	-ms-font-feature-settings:*"onum" 1,*"pnum" 1;
-	-o-font-feature-settings:*"onum" 1,*"pnum" 1;
-	-webkit-font-feature-settings: "onum" 1, "pnum" 1;
-	-font-feature-settings: "onum" 1, "pnum" 1;
-	}
 
 
 /*-- TYPE/POINT SIZE --------------------------*/
@@ -305,13 +309,6 @@ figcaption small {
 	line-height: 1.2em;
 	}
 
-.link blockquote p
-	{
-	line-height:1.4em;
-	}
-
-
-
 .photo .postContent blockquote,
 .text .postContent blockquote,
 .link .postContent blockquote,
@@ -327,7 +324,8 @@ code {
 .postContent figure figcaption,
 .postContent figure figcaption p,
 .postContent figure figcaption div,
-.copyright
+.copyright,
+.link_og_blockquote
 	{
 	line-height:1.6em;
 	}
@@ -355,11 +353,16 @@ footer small
 .blend p,
 header .tagContent li,
 header .followBtn p,
-.smallCaps,
 .reblog_button
 	{
 	letter-spacing:0.175em;
 	}
+
+.smallCaps
+	{
+	margin-left: 0.02em;
+	letter-spacing:0.12em;
+	}	
 
 .dateContent time,
 footer .postContent
@@ -514,7 +517,6 @@ h1 a:hover,
 a:hover,
 time a:hover,
 .tags a:hover,
-.blend p a:hover,
 .reblog p a:hover,
 .photo .postContent figure figcaption a:hover,
 .legals a:hover{
@@ -550,8 +552,9 @@ header .postContent a:link{
 	border-left: 3px solid #184b12;
 	}
 
-.text img, 
+.text img,
 .video iframe,
+.video-wrapper,
 .photoset_row img,
 .postContent code,
 .photo .postContent img,
@@ -580,7 +583,7 @@ h1 {
 	line-height: 0.885em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
-	margin-top: 1.55em;
+	margin-top: 1.6em;
 	width: inherit;
 	}
 
@@ -609,14 +612,18 @@ h3 {
 /*-- STRUCTURAL ---------------------------*/
 
 .wrap{
-	max-width: 1100px;
+	max-width: 1000px;
 	}
 
 .mainContent .postContent img{
 	max-width: 100%;
 	}
 
-.photo figure,
+.video iframe,
+.photo figure{
+max-width: 100%;
+	}
+
 footer, 
 .mainContent, 
 .post
@@ -627,7 +634,7 @@ footer,
 
 .postContent
 	{
-	width:62%;
+	width:63%;
 	}
 
 .results{
@@ -784,7 +791,7 @@ footer .legals,
 
 .mainContent
 	{
-	margin:3em 0 0 0;
+	margin:2.6em 0 0 0;
 	}
 
 .text .dateContent,
@@ -804,13 +811,6 @@ footer .legals,
 	{
 	padding:1em 0 0;
 	}
-
-/*
-.link .tagContent{
-	padding:3.85em 0 0;
-	}
-*/
-
 
 .text .tagContent {
 	padding:4.3em 0 0;
@@ -840,10 +840,6 @@ footer .legals,
 	padding:2em 0 0;
 	}
 
-.mainContent .postContent ul,
-.mainContent .postContent ol{
-	padding-left:3.65em;
-	}
 
 .link blockquote p{
 	padding:1em 0 0 0;
@@ -872,12 +868,12 @@ footer .legals{
 .audio,
 .video
 	{
-	margin:0 0 5.25em 0;
+	margin:0 0 5em 0;
 	}
 
 .quote
 	{
-	margin:0.55em 0 5.25em 0;
+	margin:0.55em 0 5em 0;
 	}
 
 .reblog
@@ -959,8 +955,8 @@ header nav{
 	padding-bottom: 1.6em;
 	}
 
-#thisAudio{
-	margin: 1.2em 0 0 0;
+.inlineAudio{
+	margin: 1.2em 0 0.5em 0;
 	}
 
 .mainContent .quote .postContent figcaption {
@@ -970,8 +966,6 @@ header nav{
 .mainContent .quote .postContent figcaption p {
 	padding-bottom: 1.3em;
 	}
-
-
 
 
 .mainContent .postContent ul{
@@ -998,50 +992,34 @@ header nav{
 	padding:0 30px 0 0;
 	}
 
-h2,
-header .blogInfo,
-header .postContent h1,
 footer .legals,
-.chat .postContent li,
-.chat .postContent ul,
-.quote .postContent figure blockquote,
-.quote .postContent figure figcaption,
-.quote .postContent blockquote,
 .results,
 .fig,
-.photo .postContent p,
-.link .postContent p,
-.link .postContent p .tumblr_blog a,
-.text .postContent p,
-.chat .postContent p,
-.audio .postContent p
+.photo .postContent figcaption blockquote,
+.quote .postContent figure,
+.postContent h1,
+.postContent h2,
+.postContent p,
+.postContent ul
 	{
-	padding-left:30px;
-	}
-
-.logomark{
 	margin-left: 30px;
 	}
 
-code {
-	margin-left:-30px;
-	padding-left: 40px;
-	}
-
-
-/* tumblr's new link styling, 17/04/13 */
-.text .postContent blockquote{
-	margin-top: 7px;
-	margin-left: 30px;
+.link_og_blockquote{
+	margin-left: 55px;
+	margin-top: 5px;
 	padding-top: 5px;
 	padding-bottom:5px;
+	padding-left:20px;
 	}
+
+
 
 /* HANGING PUNCTUATION  */
 .hangout {
 	padding: 7px 0px 0 0;
 	margin-left: -0.44em;
-}
+	}
 
 .quoteDouble{
 	display: inline;	
@@ -1065,12 +1043,12 @@ header .about p {
 
 .ordinal{
 	margin-right: -0.2em;
-}
+	}
 
 .blendInfo {
 	margin-left: -0.65em;
 	padding: 0.05em 0.3em 0 0;
-}
+	}
 
 .blogInfo .italic{
 	padding-right: 0.08em;
@@ -1081,13 +1059,9 @@ header .about p {
 	margin-left:0.5em;
 	}
 
-header .blendNumber{
-	}
-
 header .blogInfo{
  	margin-top: -0.1em;
 	}	
-
 
 /*-- BUTTONS  -----------------------------*/
 
@@ -1137,7 +1111,6 @@ header .blogInfo{
  	padding: 6px 8px 8px 10px;
  	}
 
-
 .followBtn{
 	margin-top: 57px;
 	}
@@ -1163,7 +1136,7 @@ header .blogInfo{
 	}
 
 .post .tagContent li::before{
-	content: "#";
+	content: "\0023";
 	padding: 0 0.15em 0 0;
 	}
 
@@ -1176,9 +1149,6 @@ header .blogInfo{
 	float: left;
 	}
 
-
-
-
 .reblogBtn,
 .followBtn,
 .tagContent ul,
@@ -1190,52 +1160,6 @@ header .blogInfo{
 .photo .postContent figcaption blockquote{
 	margin-top: 0.45em;
 	}
-
-
-/* EXPERIMENTAL */
-/*
-.quote .medium a {
-	font-size: 2.2rem;
-	padding: 0;
-	margin: 0;
-	line-height: 0.01rem;
-	letter-spacing: -0.045rem;
-}
-
-.quote .medium .hangout{
-	display: none;
-}
-
-*/
-
-
-
-/* BLOCKQUOTES */
-
-
-.photo .postContent blockquote,
-.text .postContent blockquote,
-.link .postContent blockquote
-	{
-	margin-top: 10px;
-	margin-left:56px;
-	margin-right: 30px;
-	padding-bottom: 4px;
-	padding-left: 20px;
-	}
-
-.photo .postContent blockquote blockquote,
-.text .postContent blockquote blockquote,
-.link .postContent blockquote blockquote
-	{
-	margin-top: 0px;
-	margin-left: 5px;
-	margin-right: 30px;
-	padding-bottom: 4px;
-	padding-left: 22px;
-	}
-
-
 
 /* EXTERNAL */
 @font-face {
@@ -1261,21 +1185,74 @@ header .blogInfo{
 .c1{
 	margin-left:-0.04em
 	}
-
 .c2{
 	margin-left: -0.037em;
 	margin-right: 0.004em;
 	}
-
 .c5{
 	margin-left: -0.07em;
 	}
-
 .c9{
 	margin-left:-0.025em;
 	margin-right: 0.005em;
 	}
-
+	
 .fig{
 	padding-top: 0.5em;
+	}
+
+
+
+/* Audio Player */ 
+
+.tumblr_audio_player,
+.tumblr_audio_player_51425135337,
+.audio_player,
+.audio_player_iframe,
+.audio_player_container .audio_player,
+.audio_player_container.has_visualizer .audio_controls,
+.audio_player.grey,
+.audio_visualizer,
+.album_art_container,
+.audio_player_container,
+.placeholder
+.has_visualizer {
+	background-color: #e4e4e4;
+	height:80px;
+	width: 300px;
+	}
+.audio_equalizer{
+	display: none;
+	}
+li.track_name{
+	font-weight: normal;
+	text-transform: uppercase;
+	}
+.audio_player_overlay,
+.audio_player,
+.audio_player.grey {
+	color: green;
+	}
+
+
+.pdf:after{
+	content: "&#9639;";
+	margin-left: 3px;
+	padding-left: 3px;
+	}
+
+.postNumber{
+	letter-spacing: 0.08em;
+	}
+
+.blendNumber {
+	display: block;
+	}
+
+.blendNumber:before{
+	content: '\2014';
+	}
+
+.postContent p.btnNav{
+	margin: 0;
 	}

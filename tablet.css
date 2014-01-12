@@ -4,7 +4,7 @@
 body
 	{
 	margin-left: 16px;
-	margin-right: 0;
+	margin-right: 40px;
 	font-size:106%;
 	padding: 0;
 	}
@@ -39,7 +39,6 @@ footer .tagContent,
 	text-align: left;
 	opacity: 1;
 	}
-
 
 
 .tagContent ul,
@@ -109,37 +108,10 @@ header .tagContent{
 	padding-left: 0;
 	}
 
-h2,
-header .postContent h1,
-footer .legals,
-.postContent ol,
-.chat .postContent li,
-.quote .postContent figure blockquote,
-.quote .postContent figure figcaption,
-.mainContent .chat .postContent ul,
-.mainContent .chat .postContent ol,
-.link .postContent p,
-.link .postContent ul,
-.link .postContent p .tumblr_blog a,
-.text .postContent p,
-.chat .postContent p,
-.audio .postContent p,
-.video .postContent p
-	{
-	}
-
-.link .postContent blockquote{
-	padding-right:30px;
-	}
-
-.mainContent .postContent ul,
-.mainContent .postContent ol {
-	padding-left: 3.65em;
-	}
-
 .text, .photo, .chat, .link, .audio, .video {
-margin: 0 0 5em 0;
-}
+	margin: 0 0 5em 0;
+	}
+
 
 
 /* TAG CONTENT */
@@ -158,9 +130,20 @@ margin: 0 0 5em 0;
 	border-right:none;	
 	}
 
+/* BLEND INFO */
 
 .blendInfo{
 	display: none;
+	}
+.numberSlash{
+	display: block;
+	}	
+.blendNumber:before,
+.numberSlash:before{
+	content: '—';
+	}
+.blendNumber{
+	display: block;
 	}
 
 header .dateContent,
@@ -184,7 +167,6 @@ ul.tags
 	margin-left:17%;
 	}
 
-
 .quoteDouble{
 	display: inline;	
 	}
@@ -192,7 +174,6 @@ ul.tags
 .quoteSingle{
 	display: none;
 	}
-
 
 .audio .postContent p, 
 .text .postContent p, 
@@ -203,31 +184,12 @@ ul.tags
 .video .postContent figure figcaption p, 
 .video .postContent figure figcaption div {
 	width:auto;
-}
-
-
+	}
 
 .wrap{
 	display: block;
-}
-
+	}
 
 header .postContent{
 	display:block;
-}
-
-
-.numberSlash{
-	display: block;
-}	
-
-.blendNumber:before,
-.numberSlash:before{
-	content: '—';
-}
-
-
-
-.blendNumber{
-	display: block;
-}
+	}

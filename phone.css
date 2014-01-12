@@ -12,32 +12,6 @@ html>body
 /*-- RESET --------------------------------*/
 /*-----------------------------------------*/
 
-header .blogInfo,
-.tagContent nav ul li,
-header .tagContent,
-.postContent,
-.photo figcaption,
-.photoset figcaption,
-.chat .dateContent,
-.chat .postContent ul,
-.text .postContent blockquote,
-.chat .postContent b,
-.photo .postContent figure figcaption blockquote p:last-child,
-body,
-.dateContent p,
-header nav,
-.dateContent,
-.wrap,
-.fig,
-.results,
-.photo .dateContent,
-.text .postContent blockquote,
-.tagContent nav ul,
-.photo .postContent figure figcaption p
-	{
-	padding:0;
-	}
-
 body,
 .results,
 .text img,
@@ -51,28 +25,9 @@ body,
 .quote,
 .wrap,
 .blendInfo,
-.text .dateContent,
-.chat .dateContent, 
-.link .dateContent, 
-.audio .dateContent, 
-.video .dateContent, 
-.quote .dateContent,
-.photo .dateContent,
-.chat .postContent b,
-.text .postContent blockquote,
 .tagContent nav ul li,
 .tagContent nav ul{
 	margin: 0;
-	}
-
-.mainContent .chat .postContent ul,
-.photo .postContent figure figcaption blockquote,
-.photoset .postContent figure figcaption blockquote,
-.text .postContent figure figcaption blockquote,
-.link .postContent figure figcaption blockquote,
-.video .postContent figure figcaption blockquote
-	{
-	margin-left:0;
 	}
 
 /*-----------------------------------------*/
@@ -180,9 +135,10 @@ header .tagContent li{
 .postContent figure figcaption,
 .postContent figure figcaption p, 
 .postContent figure figcaption div, 
-.copyright
+.copyright,
+.link_og_blockquote
 	{
-	line-height: 1.45em;
+	line-height: 1.5em;
 	}
 
 
@@ -291,10 +247,12 @@ header .tagContent,
 	display: inline;
 	}
 
-.dateContent time,
+.dateContent time{
+	clear: none;
+	}
 .dateContent .reblog
 	{
-	clear: none;
+	clear: left;
 	}
 
 .tagContent nav ul li,
@@ -313,6 +271,7 @@ header .tagContent,
 	float: none;
 	}
 
+.vidWrap,
 .results,
 .postContent,
 .dateContent,
@@ -361,74 +320,11 @@ header .postContent
 	}
 
 
-
-/*-- MARGIN -------------------------------*/
-
-
-/* Left padding */
-
-h2,
-header .postContent h1,
-header .about p,
-footer .legals,
-.dateContent time,
-.dateContent .reblog,
-.tagContent ul,
-.tagContent nav,
-.tagContent nav ul li,
-.chat .postContent li,
-.quote .postContent figure blockquote,
-.quote .postContent figure figcaption,
-.postContent figure figcaption blockquote,
-.photo .postContent figure figcaption blockquote div,
-.photo .postContent figure figcaption blockquote p,
-.photo .postContent figure figcaption div,
-.postContent blockquote div,
-.photo figure figcaption,
-.link .postContent p,
-.link .postContent ul,
-.link .postContent ol,
-.link .postContent p .tumblr_blog a,
-.chat .postContent p,
-.chat .postContent ul,
-.text .postContent p,
-.text .postContent ul, 
-.text .postContent ol,
-.audio .postContent p,
-.audio .postContent ul, 
-.audio .postContent ol,
-.video figcaption,
-.about p,
-.results p,
-.reblog_button,
-.followBtn,
-.btnNav a
-	{
-	padding-left:20px;
-	padding-right:20px;
-	}
-
-
-.blend{
-	padding-left: 20px;
-	}
-
-.postContent blockquote {
-	padding-right:20px;
-	}
-
-.quote figure blockquote {
-	padding-right: 30px;
-	}
-
 .mainContent .postContent ul{
 	margin-left: 30px;
 	}
 
-.link_og_blockquote {
-	margin-top: 6px;
-	margin-left: 33px;
-	}
+
 
 .quote .postContent,
 .link .postContent,
@@ -502,7 +398,6 @@ header .about p{
 }
 
 .dateContent .reblog {
-	padding-top: 0.1em;
 	}
 
 
@@ -521,6 +416,7 @@ footer .postContent {
 	padding: 0 8px 0 0;
 	}
 
+.btnNav p,
 .about{
 	padding:0;
 	}
@@ -626,32 +522,101 @@ header .blogInfo .italic{
 	width: auto;
 }
 
-.photo .postContent figure figcaption blockquote{
-	margin-right: 0;
-	padding-right: 0;
-}
 
-.link .postContent blockquote{
-padding: 0;
-margin-left: 20px;
-margin-right: 0;
+
+footer{
+	margin-top: 40px;
 	}
 
+.post:last-child .postContent {
+	border-bottom: none;
+	}
 
-.blogInfo .italic {
+/*-- PADDING -------------------------------*/
+
+.fig,
+.quote .postContent figure,
+.dateContent time,
+.about p,
+.postContent h1,
+.postContent h2,
+.postContent p,
+.results p,
+.reblog_button,
+.followBtn,
+footer .legals,
+.dateContent .reblog
+{
+	margin-left: 20px;
+	/*
+	padding-left:20px;
+	*/
+	}
+
+	.postContent p.btnNav{
+		margin: 0;
+	}
+
+		.postContent p.btnNav{
+		padding: 0;
+	}
+
+.link_og_blockquote,
+.reblog_button,
+.followBtn{
+	padding-right:20px;
+	}
+
+.audio .postContent h2, 
+.text .postContent h2, 
+.link .postContent h2, 
+.audio .postContent p, 
+.text .postContent p, 
+.link .postContent p,
+.quote .postContent blockquote,
+.quote .postContent figure figcaption, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div 
+	{
+	width: 90%;
+	}
+
+.link_og_blockquote{
+	margin-left: 25px;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom:5px;
+	padding-left:20px;
+}
+
+
+/* OPTICAL HINTING */
+
+.blogInfo .italic{
 	padding-right: 0.25em;
 	padding-left: 0.12em;
 	letter-spacing: 0.15em;
-}
+	}
 
+.legals .italic{
+	padding-right: 0.2em;
+	padding-left: 0.12em;
+	letter-spacing: 0.15em;
+	}
 
 .fig{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	}
 
-header .postContent h1{
-	margin-left: -0.06em;
-	}
 
-	
+.dateContent p, .dateContent time {
+padding: 0;
+}
+
+.dateContent .reblog,
+.dateContent time{
+margin-top: 0.2em 0 0 0;
+}
