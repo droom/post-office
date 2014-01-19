@@ -1,19 +1,17 @@
 /*-- Tablet -----------------------------------------------------------*/
 
-
 body
-	{
+{
 	margin-left: 16px;
 	margin-right: 40px;
 	font-size:106%;
 	padding: 0;
-	}
+}
 
 html>body
-	{
+{
 	font-size: 17px; 
-	}
-
+}
 
 header .dateContent,
 footer .dateContent,
@@ -33,23 +31,22 @@ footer .tagContent,
 .photoset .tagContent,
 .audio .tagContent,
 .chat .tagContent
-	{
+{
 	width:14%;
 	float:left;
 	text-align: left;
 	opacity: 1;
-	}
+}
 
 
 .tagContent ul,
 .dateContent p, 
 .dateContent time,
-.footer-links, 
 .dateContent .reblog
-	{
+{
 	text-align: left;
 	float: left;
-	}
+}
 
 
 
@@ -63,29 +60,31 @@ footer .postContent,
 .video .postContent,
 .audio .postContent,
 .chat .postContent
-	{
+{
 	float: right;
 	width: 83%;
 	display: inline;
-	}
-	
+}
 
 
-header .tagContent nav ul,
 .tagContent ul{
 	padding-left:0;
-	}
+}
 
+
+/*
 header .tagContent li{
 	display: block;
 	width: 100%;
-	}
+}
+
+*/
 
 .hangout{
 	padding: 1px 0 0 0;
 	font-size: 1.3em;
 	margin-left: -0.45em;
-	}
+}
 
 /* RESET */
 
@@ -99,18 +98,18 @@ header .blend {
 .followBtn,
 .postContent {
 	padding: 0px;
-	}
+}
 
 
 /* Left padding */
 
 header .tagContent{
 	padding-left: 0;
-	}
+}
 
 .text, .photo, .chat, .link, .audio, .video {
 	margin: 0 0 5em 0;
-	}
+}
 
 
 
@@ -122,58 +121,59 @@ header .tagContent{
 .text .tagContent,
 .quote .tagContent,
 .audio .tagContent
-	{
+{
 	padding-top:0;
-	}
+}
 
 .postContent{
 	border-right:none;	
-	}
+}
 
 /* BLEND INFO */
 
 .blendInfo{
 	display: none;
-	}
+}
 .numberSlash{
+	padding-top: 0.1em;
 	display: block;
-	}	
+}
 .blendNumber:before,
 .numberSlash:before{
 	content: '—';
-	}
+}
 .blendNumber{
 	display: block;
-	}
+}
 
-header .dateContent,
-.copyLong
-	{
+
+header .dateContent
+{
 	display:none;
-	}
+}
 
 .reblog,
 ul.tags
-	{
+{
 	padding: 0.85em 0 0 0;
-	}
+}
 
 .followBtn {
 	margin-left: 0px;
 	margin-top: 56px;
-	}
+}
 
 .results{
 	margin-left:17%;
-	}
+}
 
 .quoteDouble{
 	display: inline;	
-	}
+}
 
 .quoteSingle{
 	display: none;
-	}
+}
 
 .audio .postContent p, 
 .text .postContent p, 
@@ -184,12 +184,12 @@ ul.tags
 .video .postContent figure figcaption p, 
 .video .postContent figure figcaption div {
 	width:auto;
-	}
+}
 
 .wrap{
 	display: block;
-	}
+}
 
 header .postContent{
 	display:block;
-	}
+}

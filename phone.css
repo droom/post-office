@@ -1,12 +1,12 @@
 body
-	{
+{
 	font-size:106%;
-	}
+}
 
 html>body
-	{
+{
 	font-size: 17px; 
-	}
+}
 
 /*-----------------------------------------*/
 /*-- RESET --------------------------------*/
@@ -14,7 +14,6 @@ html>body
 
 body,
 .results,
-.text img,
 .blend,
 .text, 
 .photo, 
@@ -24,25 +23,26 @@ body,
 .video,
 .quote,
 .wrap,
-.blendInfo,
+.blendInfo
+/*,
 .tagContent nav ul li,
-.tagContent nav ul{
+.tagContent nav ul
+*/{
 	margin: 0;
-	}
+}
 
 /*-----------------------------------------*/
 /*-- TYPE ------------------------------*/
 /*-----------------------------------------*/
 
-h1{
+h1 {
 	font-size: 3.6em;
 	line-height: 0.89em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
-	margin: 0.42em 0 0 0;
-	width:auto;
-	}
-
+	margin: 0.3em 0 0 0;
+	width: auto;
+}
 h2 {
 	padding: 0 0 0.7em;
 	padding: 0.15em 0 0.4em;
@@ -50,15 +50,15 @@ h2 {
 	letter-spacing: 0;
 	margin: 0 -0.04em;
 	line-height: 1.3em;
-	}
+}
 
 h3 {
 	font-size:1.4em;
 	letter-spacing:-0.04em;
-	}
+}
 
 /*-----------------------------------------*/
-
+/*
 h1, 
 h2, 
 h3,
@@ -77,19 +77,19 @@ blockquote,
 .quote .postContent figure blockquote,
 .quote .postContent figure blockquote figcaption p,
 .quote .postContent figure blockquote figcaption a
-	{
+{
 	font-family: "Georgia Pro", Georgia, sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	}
+}
 
-
+*/
 /*-- POINT SIZE --------------------------*/
 
-
+/*
 header .blogInfo p{
 	font-size:0.8em;
-	}
+}
 
 .chat b,
 footer .postContent p,
@@ -97,11 +97,14 @@ footer .postContent p,
 .dateContent time,
 .tagContent li{
 	font-size:0.65em;
-	}
+}
 
+*/
+/*
 header .tagContent li{
-	font-size:0.85em;
-	}	
+font-size:0.85em;
+}	
+*/
 
 .hangout,
 .audio .postContent p,
@@ -113,20 +116,18 @@ header .tagContent li{
 .photo .postContent p,
 .quote .postContent figcaption,
 .results p
-	{
+{
 	font-size:1rem;
-	}
+}
 
 .chat .postContent li
-	{
+{
 	font-size:1.35rem;
-	}
+}
 
-.btnNav a{
-	font-size: 2.5em;
-	}
 
- header .postContent .about p,
+
+header .postContent .about p,
 .tagContent li,
 .postContent p,
 .postContent li,
@@ -135,32 +136,33 @@ header .tagContent li{
 .postContent figure figcaption,
 .postContent figure figcaption p, 
 .postContent figure figcaption div, 
-.copyright,
 .link_og_blockquote
-	{
+{
 	line-height: 1.5em;
-	}
+}
 
 
 .dateContent .reblog,
 .dateContent time,
-.dateContent p,
-.tagContent nav ul li:first-child{
+.dateContent p{
 	text-align: left;
-	}
+}
+/*
 
 .tagContent nav ul li:last-child{
-	text-align: right;
-	}
+text-align: right;
+}
 
 .tagContent nav ul li{
-	text-align: center;
-	}	
+text-align: center;
+}	
+
+*/
 
 footer .postContent .pPrevious
-	{
+{
 	text-indent:0em
-	}
+}
 
 
 /*---------------------------*/
@@ -169,45 +171,43 @@ footer .postContent p,
 footer .postContent a,
 footer .postContent a:link,
 footer .postContent a:visited,
-footer small,
-footer li,
-footer li a
-	{
+.btnNav a,
+footer small
+{
 	color: #fffff9;
-	}
+}
 
 .blogInfo p{
 	color: #fffff9;
-	}	
+}	
 
-.blogInfo{
-	background-color: #20531a;
-	}
 
+/*
 .tagContent nav ul{
-	background-color: blue;
-	}
-
+background-color: blue;
+}
+*/
+.blogInfo,
 footer .postContent{
 	background-color: #184b12;;
-	}	
+}	
 
 .mainContent .quote .tagContent{
 	background-color: red;
-	}
+}
 
 .legals a:hover{
 	border-bottom:1px solid white;
-	}
+}
 
 /*---------------------------*/
 
 header .dateContent,
 footer .dateContent,
 .tagContent
-	{
+{
 	display:none;
-	}
+}
 
 .postContent,
 .text .dateContent,
@@ -219,12 +219,10 @@ footer .dateContent,
 .photo .dateContent,
 .blend,
 .blendInfo,
-.btnReblog,
 .quote .postContent,
 .link .postContent,
 .audio .postContent,
 .text .postContent,
-.tagContent nav ul,
 .text, 
 .photo, 
 .chat, 
@@ -236,40 +234,38 @@ footer .dateContent,
 header .tagContent,
 .about,
 .dateContent
-	{
+{
 	display: block;
-	}
+}
 
 .hangout,
 .dateContent .reblog,
-.tagContent nav ul li,
 .dateContent time{
 	display: inline;
-	}
+}
 
 .dateContent time{
 	clear: none;
-	}
+}
 .dateContent .reblog
-	{
+{
 	clear: left;
-	}
+}
 
-.tagContent nav ul li,
 .dateContent p,
 .dateContent time,
 .dateContent .reblog,
 .hangout,
 .postInfo
-	{
+{
 	float: left;
-	}
+}
 
 .about,
 .blend
-	{
+{
 	float: none;
-	}
+}
 
 .vidWrap,
 .results,
@@ -279,51 +275,51 @@ header .tagContent,
 .html_photoset, 
 .photo .postContent img,
 .text img,
-.tagContent,
-.tagContent nav ul{
+.tagContent{
 	width: 100%;
-	}	
+}	
 
 .photo figure figcaption, 
 .photoset figure figcaption,
 .video figure figcaption, 
 .quote figure figcaption {
 	max-width: 100%;
-	}
+}
 
+/*
 .tagContent nav ul li{
-	width: 33.33%;
-	}
-
+width: 33.33%;
+}
+*/
 
 
 /*---------------------------*/
 .postContent
-	{
+{
 	border-bottom: 1px solid #20531a;
 	border-left: none;
 	border-right: none;
-	}
+}
 
 header .tagContent
-	{
+{
 	border-bottom: 1px solid #20531a;
-	}
+}
 
 .text img, 
 .video iframe, 
 .html_photoset, 
 .photo .postContent img,
 header .postContent
-	{
+{
 	border-left:none;
-	}
+}
 
-
+/*
 .mainContent .postContent ul{
-	margin-left: 30px;
-	}
-
+margin-left: 30px;
+}
+*/
 
 
 .quote .postContent,
@@ -331,42 +327,46 @@ header .postContent
 .audio .postContent,
 .text .postContent{
 	padding: 0 0 30px 0;
-	}
+}
 
 .mainContent .chat .postContent,
 .mainContent .link .postContent,
 .mainContent .text .postContent,
 .mainContent .audio .postContent
-	{
-	margin-top: 10px;
-	}
+{
+	margin-top: 0.5em;
+}
 
 .postContent {
 	padding: 0 0 30px 0;
-	}
+}
 
 .lArrow {
 	padding:0 0.4em 0 0.6em;
-	}
+}
 
 .rArrow {
 	padding:0 0 0 0.4em;
-	}
+}
 
-.hangout {
+/* Hanging punctuation */
+
+.medium .hangout,
+.short .hangout,
+.long .hangout {
 	padding: 0.1em 0 0 0.1em;
 	margin-left: -0.37em;
 	font-size: 1.8em;
 	float: left;
-	}
+}
 
 .quoteDouble{
 	display:none;
-	}
+}
 
 .quoteSingle{
 	display:inline;
-	}
+}
 
 
 .quote .postContent figure blockquote {
@@ -374,7 +374,7 @@ header .postContent
 	line-height: 1.12em;
 	letter-spacing: -0.035em;
 	margin-top: 0.4em;
-	}
+}
 
 .text .dateContent,
 .chat .dateContent, 
@@ -383,63 +383,84 @@ header .postContent
 .video .dateContent, 
 .quote .dateContent,
 .photo .dateContent
-	{
+{
 	padding:6px 0 15px 0;
-	}
+}
 
-.photo figcaption, .photoset figcaption {
+.photo figcaption, 
+.photoset figcaption
+{
 	padding-top: 0.25em;
-	}
+}
 
 
 header .about p{
 	padding-top: 0.4em;
 	padding-bottom: 0.4em;
+	margin-left: 0;
 }
-
-.dateContent .reblog {
-	}
 
 
 .text .postContent img {
 	margin: 1.3em 0 0em;
-	}
+}
 
 
 footer .postContent {
 	padding-top: 1.3em;
 	padding-bottom: 1em;
-	}
+}
+
+/*
+.postLink::before {
+margin-left: -21px;
+padding: 0 8px 0 0;
+}
+*/
+
+
+.quote .postContent figure figcaption::before {
+	margin-left: -8%;
+	font-size: 1em;
+	padding: 0 0.45em 0 0;
+	float: left;
+}
 
 .postLink::before {
-	margin-left: -21px;
-	padding: 0 8px 0 0;
-	}
+	font-size: 0.9em;
+	margin-left: -8%;
+	padding: 0;
+	float: left;
+}
+
 
 .btnNav p,
 .about{
 	padding:0;
-	}
+}
 
 .dateContent, .tagContent {
 	min-height: 0px;
-	}
+}
 
 .results{
 	padding-top: 0.8em;
 	padding-bottom:2em;
-	}
+}
 
+/*
 footer .legals{
-	width: 60%;
-	}
+width: 60%;
+}
+*/
+
 .blend{
 	float: left;
-	}
+}
 
 .blendInfo {
 	display: none;
-	}
+}
 
 .reblog_button,
 .followBtn{
@@ -447,19 +468,19 @@ footer .legals{
 	margin-top: 20px;
 	margin-left: 0;
 	margin-bottom: 40px;
-	}
+}
 
 header .postContent {
 	margin-bottom: 0;
-	}
+}
 .mainContent{
 	margin:0;
-	}
+}
 
 .lArrow,
 .rArrow {
 	padding: 0;
-	}
+}
 
 .mainContent .postContent p, 
 .photo .postContent figure figcaption p, 
@@ -467,47 +488,43 @@ header .postContent {
 .video .postContent figure figcaption p, 
 .video .postContent figure figcaption div{
 	padding-top: 0.8em;
-	}
-
-
-/* IN DEVELOPMENT */
+}
 
 .postInfo{
 	float:left;
-	}
+}
 
+/*
 .logo{
-	padding-left: 20px;
-	margin-top: 30px;
-	width: 138px;
-	height: 98px;
-	}
+padding-left: 20px;
+margin-top: 30px;
+width: 138px;
+height: 98px;
+}
+*/
 
 header .postContent {
 	padding: 0 0 20px 0;
-	}
+}
 
+
+/*
 header .blogInfo p{
-	font-size: 0.68em;
-		letter-spacing: 0.2em;
-		padding-top: 0.5em;
+font-size: 0.68em;
+letter-spacing: 0.2em;
+padding-top: 0.5em;
 
 }
+*/
 
 footer .legals .italic{
 	font-size: 0.8em;
-	}
+}
 
-.logomark{
-	margin-top: 35px;
-	margin-left:15px;
-	width:162px;
-	height:108px;
-	}
 
 header .blogInfo .italic{
 	font-size: 0.8em;
-	}
+}
 
 
 
@@ -522,51 +539,83 @@ header .blogInfo .italic{
 	width: auto;
 }
 
-
-
 footer{
 	margin-top: 40px;
-	}
+}
 
 .post:last-child .postContent {
 	border-bottom: none;
-	}
+}
 
 /*-- PADDING -------------------------------*/
+
 
 .fig,
 .quote .postContent figure,
 .dateContent time,
-.about p,
+header .about p,
 .postContent h1,
 .postContent h2,
 .postContent p,
+.postContent ul,
 .results p,
+.blend,
 .reblog_button,
+.postInfo,
 .followBtn,
+.postContent p.btnNav,
 footer .legals,
 .dateContent .reblog
 {
-	margin-left: 20px;
-	/*
-	padding-left:20px;
-	*/
-	}
+/*
+margin-left: 20px;
+*/
+margin-left: 6.75%;
+}
 
-	.postContent p.btnNav{
-		margin: 0;
-	}
+.followBtn,
+.reblog_button,
+.quote .postContent figure,
+.postContent h1,
+.postContent h2,
+.postContent p,
+.postContent ul
+{
+/*
+margin-right: 20px;
+*/
+margin-right: 6.75%;
+}
 
-		.postContent p.btnNav{
-		padding: 0;
-	}
+/*
 
+.postContent p.btnNav{
+margin: 0;
+}
+.postContent p.btnNav{
+padding: 0;
+}
+
+*/
+
+/*
 .link_og_blockquote,
 .reblog_button,
 .followBtn{
-	padding-right:20px;
-	}
+padding-right:20px;
+}
+*/
 
+.photo .postContent blockquote,
+.link_og_blockquote{
+	margin-left: 10%;
+	margin-top: 4px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+}
+
+/*
 .audio .postContent h2, 
 .text .postContent h2, 
 .link .postContent h2, 
@@ -579,17 +628,10 @@ footer .legals,
 .photo .postContent figure figcaption div, 
 .video .postContent figure figcaption p, 
 .video .postContent figure figcaption div 
-	{
-	width: 90%;
-	}
-
-.link_og_blockquote{
-	margin-left: 25px;
-	margin-top: 5px;
-	padding-top: 5px;
-	padding-bottom:5px;
-	padding-left:20px;
+{
+width: 90%;
 }
+*/	
 
 
 /* OPTICAL HINTING */
@@ -598,25 +640,92 @@ footer .legals,
 	padding-right: 0.25em;
 	padding-left: 0.12em;
 	letter-spacing: 0.15em;
-	}
+}
 
 .legals .italic{
 	padding-right: 0.2em;
 	padding-left: 0.12em;
 	letter-spacing: 0.15em;
-	}
+}
 
 .fig{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
+}
+
+.dateContent .reblog{
+	margin-top: 0.15em;
+}
+
+
+
+header .postInfo p,
+header .blend p{
+	margin-left: 0;
+/*
+padding:0;
+*/
+}
+
+/* BLEND INFO */
+
+
+.numberSlash{
+	padding-top: 0em;
+	display: inline;
+}
+.numberSlash:before{
+	content: '—';
+}
+
+
+.btnNav a{
+	font-size: 2.5em;
+	padding: 0;
+}
+
+
+.mainContent .postContent ul {
+	padding-top: 0;
+}
+
+
+.reblog p{
+	background-color: yellow;
+	width: 100%;
+}
+
+/*
+header .postContent .about{
+	padding: 0.1em 0;
+}
+*/
+
+header .about{
+	margin-top: 0em;
+}
+
+header .postContent .about p {
+	line-height: 1.14em;
+}
+
+header .blogInfo{
+	font-size: 0.788em;
 	}
 
-
-.dateContent p, .dateContent time {
-padding: 0;
+small, .chat b, .dateContent p, .dateContent time, .tagContent li {
+font-size: 0.65em;
 }
 
-.dateContent .reblog,
-.dateContent time{
-margin-top: 0.2em 0 0 0;
+
+.tagContent{
+	margin-left: 0;
 }
+
+
+
+.postWord:before,
+.blendWord:before{
+content: "";
+}
+
