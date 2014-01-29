@@ -1,12 +1,20 @@
 /*-- Tablet -----------------------------------------------------------*/
 
 body
+<<<<<<< HEAD
+	{
+=======
 {
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 	margin-left: 16px;
 	margin-right: 40px;
 	font-size:106%;
 	padding: 0;
+<<<<<<< HEAD
+	}
+=======
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 html>body
 {
@@ -31,13 +39,16 @@ footer .tagContent,
 .photoset .tagContent,
 .audio .tagContent,
 .chat .tagContent
+<<<<<<< HEAD
+	{
+=======
 {
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 	width:14%;
 	float:left;
 	text-align: left;
 	opacity: 1;
 }
-
 
 .tagContent ul,
 .dateContent p, 
@@ -105,11 +116,19 @@ header .blend {
 
 header .tagContent{
 	padding-left: 0;
+<<<<<<< HEAD
+	}
+
+.text, .photo, .chat, .link, .audio, .video {
+	margin: 0 0 5em 0;
+	}
+=======
 }
 
 .text, .photo, .chat, .link, .audio, .video {
 	margin: 0 0 5em 0;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 
 
@@ -133,6 +152,17 @@ header .tagContent{
 
 .blendInfo{
 	display: none;
+<<<<<<< HEAD
+	}
+.numberSlash{
+	padding-top: 0.1em;
+	display: block;
+	}	
+.blendNumber:before,
+.numberSlash:before{
+	content: '—';
+	}
+=======
 }
 .numberSlash{
 	padding-top: 0.1em;
@@ -142,13 +172,20 @@ header .tagContent{
 .numberSlash:before{
 	content: '—';
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 .blendNumber{
 	display: block;
 }
 
+<<<<<<< HEAD
+header .dateContent,
+.copyLong
+	{
+=======
 
 header .dateContent
 {
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 	display:none;
 }
 
@@ -190,6 +227,35 @@ ul.tags
 	display: block;
 }
 
+<<<<<<< HEAD
+.quoteDouble{
+	display: inline;	
+	}
+
+.quoteSingle{
+	display: none;
+	}
+
+.audio .postContent p, 
+.text .postContent p, 
+.link .postContent p, 
+.quote .postContent figure figcaption, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div {
+	width:auto;
+	}
+
+.wrap{
+	display: block;
+	}
+
+header .postContent{
+	display:block;
+	}
+=======
 header .postContent{
 	display:block;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34

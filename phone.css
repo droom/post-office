@@ -14,6 +14,10 @@ html>body
 
 body,
 .results,
+<<<<<<< HEAD
+.text img,
+=======
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 .blend,
 .text, 
 .photo, 
@@ -23,13 +27,21 @@ body,
 .video,
 .quote,
 .wrap,
+<<<<<<< HEAD
+.blendInfo,
+=======
 .blendInfo
 /*,
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 .tagContent nav ul li,
 .tagContent nav ul
 */{
 	margin: 0;
+<<<<<<< HEAD
+	}
+=======
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 /*-----------------------------------------*/
 /*-- TYPE ------------------------------*/
@@ -40,9 +52,16 @@ h1 {
 	line-height: 0.89em;
 	letter-spacing: -0.05em;
 	margin-left: -0.05em;
+<<<<<<< HEAD
+	margin: 0.42em 0 0 0;
+	width:auto;
+	}
+
+=======
 	margin: 0.3em 0 0 0;
 	width: auto;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 h2 {
 	padding: 0 0 0.7em;
 	padding: 0.15em 0 0.4em;
@@ -91,6 +110,10 @@ header .blogInfo p{
 	font-size:0.8em;
 }
 
+header .blogInfo p{
+	font-size:0.8em;
+	}
+
 .chat b,
 footer .postContent p,
 .dateContent p, 
@@ -116,9 +139,15 @@ font-size:0.85em;
 .photo .postContent p,
 .quote .postContent figcaption,
 .results p
+<<<<<<< HEAD
+	{
+	font-size:1rem;
+	}
+=======
 {
 	font-size:1rem;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .chat .postContent li
 {
@@ -136,8 +165,14 @@ header .postContent .about p,
 .postContent figure figcaption,
 .postContent figure figcaption p, 
 .postContent figure figcaption div, 
+<<<<<<< HEAD
+.copyright,
+.link_og_blockquote
+	{
+=======
 .link_og_blockquote
 {
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 	line-height: 1.5em;
 }
 
@@ -190,7 +225,11 @@ background-color: blue;
 .blogInfo,
 footer .postContent{
 	background-color: #184b12;;
+<<<<<<< HEAD
+	}	
+=======
 }	
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .mainContent .quote .tagContent{
 	background-color: red;
@@ -240,17 +279,29 @@ header .tagContent,
 
 .hangout,
 .dateContent .reblog,
+<<<<<<< HEAD
+.tagContent nav ul li,
+=======
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 .dateContent time{
 	display: inline;
 }
 
 .dateContent time{
 	clear: none;
+<<<<<<< HEAD
+	}
+.dateContent .reblog
+	{
+	clear: left;
+	}
+=======
 }
 .dateContent .reblog
 {
 	clear: left;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .dateContent p,
 .dateContent time,
@@ -313,29 +364,49 @@ header .tagContent
 header .postContent
 {
 	border-left:none;
+<<<<<<< HEAD
+	}
+
+
+=======
 }
 
 /*
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 .mainContent .postContent ul{
 margin-left: 30px;
 }
 */
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .quote .postContent,
 .link .postContent,
 .audio .postContent,
 .text .postContent{
 	padding: 0 0 30px 0;
+<<<<<<< HEAD
+	}
+=======
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .mainContent .chat .postContent,
 .mainContent .link .postContent,
 .mainContent .text .postContent,
 .mainContent .audio .postContent
+<<<<<<< HEAD
+	{
+	margin-top: 0.5em;
+	}
+=======
 {
 	margin-top: 0.5em;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .postContent {
 	padding: 0 0 30px 0;
@@ -367,6 +438,15 @@ margin-left: 30px;
 .quoteSingle{
 	display:inline;
 }
+
+
+.quoteDouble{
+	display:none;
+	}
+
+.quoteSingle{
+	display:inline;
+	}
 
 
 .quote .postContent figure blockquote {
@@ -433,11 +513,18 @@ padding: 0 8px 0 0;
 	float: left;
 }
 
+<<<<<<< HEAD
+.btnNav p,
+.about{
+	padding:0;
+	}
+=======
 
 .btnNav p,
 .about{
 	padding:0;
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .dateContent, .tagContent {
 	min-height: 0px;
@@ -446,6 +533,13 @@ padding: 0 8px 0 0;
 .results{
 	padding-top: 0.8em;
 	padding-bottom:2em;
+<<<<<<< HEAD
+	}
+
+footer .legals{
+	width: 60%;
+	}
+=======
 }
 
 /*
@@ -454,13 +548,18 @@ width: 60%;
 }
 */
 
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 .blend{
 	float: left;
 }
 
 .blendInfo {
 	display: none;
+<<<<<<< HEAD
+	}
+=======
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .reblog_button,
 .followBtn{
@@ -475,7 +574,11 @@ header .postContent {
 }
 .mainContent{
 	margin:0;
+<<<<<<< HEAD
+	}
+=======
 }
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 
 .lArrow,
 .rArrow {
@@ -713,6 +816,61 @@ header .blogInfo{
 	font-size: 0.788em;
 	}
 
+<<<<<<< HEAD
+.mainContent .postContent p, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div,
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div{
+	padding-top: 0.8em;
+	}
+
+
+/* IN DEVELOPMENT */
+
+.postInfo{
+	float:left;
+	}
+
+.logo{
+	padding-left: 20px;
+	margin-top: 30px;
+	width: 138px;
+	height: 98px;
+	}
+
+header .postContent {
+	padding: 0 0 20px 0;
+	}
+
+header .blogInfo p{
+	font-size: 0.68em;
+		letter-spacing: 0.2em;
+		padding-top: 0.5em;
+
+}
+
+footer .legals .italic{
+	font-size: 0.8em;
+	}
+
+
+header .blogInfo .italic{
+	font-size: 0.8em;
+	}
+
+
+
+.audio .postContent p, 
+.text .postContent p, 
+.link .postContent p, 
+.quote .postContent figure figcaption, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div {
+	width: auto;
+=======
 small, .chat b, .dateContent p, .dateContent time, .tagContent li {
 font-size: 0.65em;
 }
@@ -720,12 +878,143 @@ font-size: 0.65em;
 
 .tagContent{
 	margin-left: 0;
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
 }
 
 
 
+<<<<<<< HEAD
+footer{
+	margin-top: 40px;
+	}
+
+.post:last-child .postContent {
+	border-bottom: none;
+	}
+
+/*-- PADDING -------------------------------*/
+
+.fig,
+.quote .postContent figure,
+.dateContent time,
+header .about p,
+.postContent h1,
+.postContent h2,
+.postContent p,
+.results p,
+.blend,
+.reblog_button,
+.postInfo,
+.followBtn,
+footer .legals,
+.dateContent .reblog
+	{
+		/*
+	margin-left: 20px;
+		*/
+	margin-left: 6.5%;
+	}
+
+.followBtn,
+.reblog_button,
+.quote .postContent figure,
+.postContent h1,
+.postContent h2,
+.postContent p,
+.postContent ul
+	{
+		/*
+	margin-right: 20px;
+		*/
+	margin-right: 6.5%;
+	}
+
+
+	.postContent p.btnNav{
+		margin: 0;
+		}
+	.postContent p.btnNav{
+		padding: 0;
+		}
+
+/*
+.link_og_blockquote,
+.reblog_button,
+.followBtn{
+	padding-right:20px;
+	}
+*/
+
+.photo .postContent blockquote,
+.link_og_blockquote{
+	margin-left: 10%;
+	margin-top: 4px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	}
+
+/*
+.audio .postContent h2, 
+.text .postContent h2, 
+.link .postContent h2, 
+.audio .postContent p, 
+.text .postContent p, 
+.link .postContent p,
+.quote .postContent blockquote,
+.quote .postContent figure figcaption, 
+.photo .postContent figure figcaption p, 
+.photo .postContent figure figcaption div, 
+.video .postContent figure figcaption p, 
+.video .postContent figure figcaption div 
+	{
+	width: 90%;
+	}
+*/	
+
+
+/* OPTICAL HINTING */
+
+.blogInfo .italic{
+	padding-right: 0.25em;
+	padding-left: 0.12em;
+	letter-spacing: 0.15em;
+	}
+
+.legals .italic{
+	padding-right: 0.2em;
+	padding-left: 0.12em;
+	letter-spacing: 0.15em;
+	}
+
+.fig{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	}
+
+.dateContent .reblog{
+	margin-top: 0.15em;
+	}
+
+
+
+header .postInfo p,
+header .blend p{
+	margin-left: 0;
+	/*
+	padding:0;
+	*/
+}
+
+/*
+.blendNumber {
+display: inline;
+}
+*/
+=======
 .postWord:before,
 .blendWord:before{
 content: "";
 }
 
+>>>>>>> c27bb9415d28409d25c9d3c6edb174d073d4eb34
